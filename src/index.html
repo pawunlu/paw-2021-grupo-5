@@ -3,88 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
+    <meta name="description" content="Institucion de Salud" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Institucion de Salud</title>
   </head>
   <body>
-    <!-- Header -->
     <header>
-      <!-- Logo + Titulo -->
-      <section>
-        <img src="images\logo.png" alt="Logo" />
-        <h1>Institución de Salud</h1>
-      </section>
-
-      <!-- Boton Iniciar Sesion -->
-      <section>
-        <input type="button" value="Iniciar Sesion" />
-      </section>
+      <h4>Logo</h4>
+      <h1>Instuticion de Salud</h1>
+      <button>Iniciar sesion</button>
     </header>
 
     <!-- Menu -->
     <nav>
       <ul>
         <li>
-          <a href="#">Atención al Paciente</a>
+          <a>Atención al Paciente</a>
           <ul>
-            <li><a href="#">Solicitar Turno</a></li>
-            <li><a href="#">Consultar Turnos</a></li>
+            <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
+            <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
           </ul>
         </li>
-        <li><a href="#">Profesionales</a></li>
-        <li><a href="#">Especialidades</a></li>
-        <li><a href="#">Obras Sociales</a></li>
-        <li><a href="#">Institucional</a></li>
-        <li><a href="#">Noticias</a></li>
+        <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
+        <li><a href="obrasSociales.html">Obras Sociales</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
       </ul>
     </nav>
 
     <main>
-      <!-- Turnos -->
       <section>
-        <ul>
-          <li><a href="#">Solicitar Turno</a></li>
-          <li><a href="#">Consultar Turnos</a></li>
-        </ul>
+        <button>Nuevo Turno</button>
+        <button>Consultar Turno</button>
       </section>
 
-      <!-- Buscador + Mapa -->
       <section>
-        <!-- Buscador -->
-        <section></section>
-
-        <!-- Mapa -->
-        <section></section>
+        <h1>Servicios Médicos</h1>
+        <input
+          type="text"
+          placeholder="Buscar un profesional o una especialidad"
+        />
+        <h3>Servicios médicos mas buscados</h3>
+        <article>
+          <h4>Especialidades</h4>
+          <h5>Lista de Especialidades</h5>
+        </article>
+        <article>
+          <h4>Profesionales</h4>
+          <h5>Lista de Profesionales</h5>
+        </article>
       </section>
 
-      <!-- Noticias -->
-      <section></section>
+      <section>
+        <article>
+          <h1>Contactenos</h1>
+          <h4>Dirección</h4>
+          <h4>Telefono</h4>
+          <h4>Email</h4>
+        </article>
+        <article>
+          <h1>¿Como llegar?</h1>
+          <h4>Mapa</h4>
+        </article>
+      </section>
+
+      <section>
+        <h1>Noticias</h1>
+        <article>
+          <h3>Noticia</h3>
+          <h5>Imagen noticia</h5>
+          <p>Párrafo de la noticia n</p>
+        </article>
+      </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <!-- Logo -->
       <section>
-        <img src="images\logo.png" alt="Logo" />
+        <h4>Logo</h4>
       </section>
 
-      <!-- Datos de la Institucion -->
-      <section></section>
-
-      <!-- Redes Sociales -->
       <section>
-        <ul>
-          <li>
-            <a href="#"><img src="images/logo-facebook.png" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/logo-instagram.png" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="images/logo-twitter.png" /></a>
-          </li>
-        </ul>
+        <h4>Direccion</h4>
+        <h4>Telefono</h4>
       </section>
+
+      <h4>Redes sociales</h4>
+      <nav>
+        <a href="https://www.instagram.com/">Facebook</a>
+        <a href="https://www.facebook.com/">Instragram</a>
+        <a href="https://twitter.com/">Twitter</a>
+      </nav>
     </footer>
   </body>
 </html>
