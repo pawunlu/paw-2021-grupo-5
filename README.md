@@ -1,9 +1,11 @@
-# PAW 2021 #
+# Programación en Ambiente Web 2021 - 11086 #
 ## Grupo N°5 ##
 
 ***Autores:***
-* Bert, Joaquin - Legajo 133168 <br>
-* Sequeira, Leonardo - Legajo 112776<br>
+| Alumno | Legajo |
+| :--------- | :--------- |
+| Bert, Joaquin | 133168 |
+| Sequeira, Leonardo | 112776 |
 
 * * *
 
