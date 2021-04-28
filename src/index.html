@@ -6,17 +6,24 @@
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
     <meta name="description" content="Institucion de Salud" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link rel="stylesheet" href="../css/reset.css"-->
+    <link rel="stylesheet" href="../css/style.css">
+
     <title>Institucion de Salud</title>
   </head>
   <body>
-    <header>
-      <img />
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+    <header class="header">
+      <section class="header-name">
+        <img />
+        <h1>UNLuPAW Medical Group</h1>  
+      </section>
+      <section class="header-sesion">
+        <button>Iniciar sesion</button>        
+      </section>
     </header>
 
     <!-- Menu -->
-    <nav>
+    <nav class="menu">
       <ul>
         <li>
           <a>Atención al Paciente</a>
@@ -33,53 +40,55 @@
     </nav>
 
     <main>
-      <section>
+      <section class="botones_turno">
         <button>Nuevo Turno</button>
         <button>Consultar Turno</button>
       </section>
 
-      <section>
-        <h2>Servicios Médicos</h2>
-        <input
-          type="search"
-          placeholder="Buscar un profesional o una especialidad"
-        />
 
-        <section>
-          <h3>Servicios médicos mas buscados</h3>
-
-        <section>
-          <h4>Especialidades</h4>
+      <section class="contenedor-medio">
+        <section class="buscador">
+          <h2>Servicios Médicos</h2>
+          <input type="search" placeholder="Buscar un profesional o una especialidad"/>
+          <section>
+            <h3>Servicios médicos mas buscados</h3>
+            <section>
+              <h4>Especialidades</h4>
+              <article>
+                <h5>Lista de Especialidades</h5>
+              </article>
+            </section>
+            <section>
+              <h4>Profesionales</h4>
+              <article>
+                <h5>Lista de Profesionales</h5>
+              </article>
+            </section>
+          </section>
+        </section>
+  
+  
+        <section class="mapa">
           <article>
-            <h5>Lista de Especialidades</h5>
+            <h2>Contactenos</h2>
+            <h3>Dirección</h3>
+            <h3>Telefono</h3>
+            <h3>Email</h3>
+          </article>
+          <article>
+            <h2>¿Como llegar?</h2>
+            <h3>Mapa</h3>
           </article>
         </section>
-        <section>
-          <h4>Profesionales</h4>
-
-          <article>
-            <h5>Lista de Profesionales</h5>
-          </article>
-        </section>
 
       </section>
 
-      </section>
 
-      <section>
-        <article>
-          <h2>Contactenos</h2>
-          <h3>Dirección</h3>
-          <h3>Telefono</h3>
-          <h3>Email</h3>
-        </article>
-        <article>
-          <h2>¿Como llegar?</h2>
-          <h3>Mapa</h3>
-        </article>
-      </section>
 
-      <section>
+      
+
+        
+      <section class="noticias">
         <h2>Noticias</h2>
         <article>
           <h3>Noticia</h3>
@@ -87,6 +96,8 @@
           <p>Párrafo de la noticia</p>
         </article>
       </section>
+
+
     </main>
 
     <footer>

@@ -1,0 +1,57 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: linear-gradient(to bottom,  #1e5799 0%,#207cca 33%,#207cca 33%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: white;
+    display: block;
+    border: 5px solid black;
+}
+
+.header-name {
+    display: inline-block;
+    border: 5px solid green;
+}
+
+.header-sesion {
+    display: inline-block;
+    border: 5px solid red;
+}
+
+.menu {
+    display: block;
+    border: 5px solid blueviolet;
+}
+
+.botones_turno {
+    display: block;
+    border: 5px solid turquoise;
+}
+
+.contenedor-medio {
+    display: block;
+    border: 5px solid chartreuse;
+}
+
+.buscador {
+    display: inline-block;
+    border: 5px solid brown;
+}
+
+.mapa {
+    display: inline-block;
+    border: 5px solid palevioletred;
+}
+
+
+.noticias {
+    display: block;
+    border: 5px solid orange;
+}
+
+footer {
+    background: linear-gradient(to bottom,  #1e5799 0%,#207cca 33%,#207cca 33%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    color: white;
+    border: 5px solid black;
+}
