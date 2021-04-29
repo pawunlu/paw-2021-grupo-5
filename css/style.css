@@ -7,6 +7,7 @@ header {
     color: white;
     display: block;
     border: 5px solid black;
+    margin: 10px;
 }
 
 .header-name {
@@ -22,36 +23,48 @@ header {
 .menu {
     display: block;
     border: 5px solid blueviolet;
-}
-
-.botones_turno {
-    display: block;
-    border: 5px solid turquoise;
-}
-
-.contenedor-medio {
-    display: block;
-    border: 5px solid chartreuse;
+    margin: 10px;
 }
 
 .buscador {
     display: inline-block;
     border: 5px solid brown;
+    margin: 10px;
 }
 
 .mapa {
     display: inline-block;
     border: 5px solid palevioletred;
+    margin: 10px;
 }
-
 
 .noticias {
     display: block;
     border: 5px solid orange;
+    margin: 10px;
+}
+
+.seccion-contenedor-block {
+    display: block;
+    border: 5px solid orange;
+    margin: 10px;
+}
+
+.seccion-contenedor-inline {
+    display: inline-block;
+    border: 5px solid orange;
+    margin: 10px;
+}
+
+.tarjeta-persona {
+    display: inline-block;
+    border: 5px solid palevioletred;
+    margin: 10px;
 }
 
 footer {
     background: linear-gradient(to bottom,  #1e5799 0%,#207cca 33%,#207cca 33%,#2989d8 50%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     color: white;
     border: 5px solid black;
+    margin: 10px;
 }

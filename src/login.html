@@ -6,17 +6,22 @@
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
     <meta name="description" content="Institucion de Salud" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institucion de Salud</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>UNLuPAW Medical Group</title>
   </head>
   <body>
-    <header>
-      <h4>Logo</h4>
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+    <header class="header">
+      <section class="header-name">
+        <img />
+        <h1>UNLuPAW Medical Group</h1>  
+      </section>
+      <section class="header-sesion">
+        <a href="login.html"><button>Iniciar sesion</button></a>
+      </section>
     </header>
 
     <!-- Menu -->
-    <nav>
+    <nav class="menu">
       <ul>
         <li>
           <a>Atención al Paciente</a>
@@ -33,30 +38,36 @@
     </nav>
 
     <main>
-      <section>
-        <h2>Iniciar Sesion</h2>
-        <article>
-          <h3>Email</h3>
-          <input type="email" />
+      <section class="seccion-contenedor-block">
+      
+        <section class="seccion-contenedor-inline">
+          <h2>Iniciar Sesion</h2>
+          <article>
+            <h3>Email</h3>
+            <input type="email" />
 
-          <h3>Contraseña</h3>
-          <input type="password" />
-        </article>
+            <h3>Contraseña</h3>
+            <input type="password" />
+          </article>
 
-        <button>Iniciar sesión</button>
+          <button>Iniciar sesión</button>
 
-        <h4>¿Nuevo en la Institución XXXXXXX?</h4>
-        <button>Registrate</button>
+          <h4>¿Nuevo en la Institución XXXXXXX?</h4>
+          <button>Registrate</button>
+        </section>
+        
+        <section class="seccion-contenedor-inline">
+          <h2>Turnos telefónicos</h2>
+          <article>
+            <h3>Numero de telefono 1</h3>
+            <h3>Numero de telefono 2</h3>
+            <h3>Numero de telefono 3</h3>
+          </article>
+        </section>
+      
       </section>
 
-      <section>
-        <h2>Turnos telefónicos</h2>
-        <article>
-          <h3>Numero de telefono 1</h3>
-          <h3>Numero de telefono 2</h3>
-          <h3>Numero de telefono 3</h3>
-        </article>
-      </section>
+      
     </main>
 
     <footer>
