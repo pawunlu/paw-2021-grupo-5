@@ -1,0 +1,26 @@
+:root {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    --principal-color1: #00B3DE;
+    --principal-color2: #003c70;
+    --secondary-color1: #8a8a8d;
+    --secondary-color2: #4f2c7f;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:linear-gradient(160deg,var(--principal-color1),var(--principal-color1) 60%,var(--principal-color2) ,var(--principal-color2));
+    
+}
+
+@media screen and (max-width: 400px) {
+    .header{
+        background: var(--principal-color1);
+        align-items: center;
+        justify-content: start;
+    }
+    
+}
