@@ -8,19 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Institucion de Salud</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <img />
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+    
+    <header>
+
+      <picture>
+        <source media="(min-width:768px)" srcset="/imagenes/logo2.png 768w">
+        <img src="/images/logo2.png" style="width:85px; height: 100px;">
+      </picture> 
+
+      <a class="buttonIniciar" href="login.html">Iniciar sesion</a>
     </header>
 
     <!-- Menu -->
     <nav>
       <ul>
-        <li>
-          <a>Atención al Paciente</a>
+        <li> <a>Atención al Paciente</a>
           <ul>
             <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
             <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
@@ -34,19 +39,37 @@
     </nav>
 
     <main>
-      <section>
-        <button>Nuevo Turno</button>
-        <button>Consultar Turno</button>
+      <section class="Turnero">
+      
+        <a href="solicitarTurno.html" style="display: flex; align-items: center; flex-direction: column;"> 
+          <i class="material-icons-outlined" style="font-size: 36px; margin-bottom: 1vh;">post_add</i> 
+          Nuevo Turno
+        </a>
+        <hr>
+        <a href="listadoTurnos.html" style="display: flex; align-items: center; flex-direction: column;"> 
+          <i class="material-icons-outlined" style="font-size: 36px; margin-bottom: 1vh;">event_note</i> 
+          Consultar Turno
+        </a>
       </section>
 
-      <section>
-        <h2>Servicios Médicos</h2>
+
+      <section style="display: flex; justify-content: space-evenly;">
+
+
+      
+      <section class="serviciosMedicos">
+        <h2 style="display: flex; align-items: center;">
+            <i class="material-icons-outlined" style="font-size: 36px;">medical_services</i>
+            <i class="material-icons-outlined" style="font-size: 36px;">emergency</i>
+            Servicios Médicos
+        </h2>
         <input
           type="search"
           placeholder="Buscar un profesional o una especialidad"
         />
-
         <section>
+        
+          
           <h3>Servicios médicos mas buscados</h3>
 
         <section>
@@ -67,44 +90,57 @@
 
       </section>
 
-      <section>
-        <article>
-          <h2>Contactenos</h2>
-          <h3>Dirección</h3>
-          <h3>Telefono</h3>
-          <h3>Email</h3>
+      <section class="cardDatos">
+
+        <!-- <h2 style="text-align: center;">Contactenos</h2>       -->
+        <article style="flex-direction: column; display: flex; justify-content: space-evenly; width: 30%;">
+          <address style="color: black; display: flex; align-items: center;"> 
+            <i class="material-icons-outlined" style="font-size: 36px">location_on</i>
+            El Grito de Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+          </address>
+
+
+          <a href="tel:+2364537977" style="color: black; display: flex; align-items: center;"> 
+            <i class="material-icons-outlined" style="font-size: 36px">phone</i>
+            +54 11 1234-5678 Atención telefónica las 24hs
+          </a>
+          <a href="mailto:joaco_39@hotmail.com" style="color: black; display: flex; align-items: center;"> 
+            <i class="material-icons-outlined" style="font-size: 36px">mail</i>
+            Email
+          </a>
         </article>
-        <article>
-          <h2>¿Como llegar?</h2>
-          <h3>Mapa</h3>
+
+        <article style="flex-direction: column; display: flex; justify-content: center; align-items: center;">
+          <h3>¿Como llegar?</h3>
+  <!--        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.5370467199264!2d-59.997247785128664!3d-34.91806578170451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bea4e589b2b9f5%3A0x68f19a3e57a9870c!2sUniversidad%20Nacional%20de%20Luj%C3%A1n%20-%20Centro%20Regional%20Chivilcoy!5e0!3m2!1ses!2sar!4v1620135639452!5m2!1ses!2sar" width="354" height="338" style="border:0;" allowfullscreen="" loading="lazy"></iframe>-->
         </article>
       </section>
 
-      <section>
-        <h2>Noticias</h2>
-        <article>
-          <h3>Noticia</h3>
-          <img />
-          <p>Párrafo de la noticia</p>
-        </article>
+    </section>
+
+
+      <section class="cardNoticias">
+          <h2>Titulo noticia</h2>         
+          <img alt="Noticia" src="/images/noticia.jpg" style="width: 55vw; height: 70vh;"/>
+          <a href="noticia.html" style="color: black;"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></a>
       </section>
     </main>
 
+    
     <footer>
       <section>
         <small>Logo</small>
       </section>
 
       <section>
-        <small>Direccion</small>
-        <small>Telefono</small>
+        <address>Av. Chacabuco 1234 - Ciudad de Buenos Aires</address>
+        <a href="tel:+2364537977" style="color: #ffffff;">Teléfono: 02345-485562 </a>
       </section>
 
-      <small>Redes sociales</small>
       <nav>
-        <small><a href="https://www.instagram.com/">Facebook</a></small>
-        <small><a href="https://www.facebook.com/">Instragram</a></small>
-        <small><a href="https://twitter.com/">Twitter</a></small>
+        <a href="https://www.facebook.com/"><i class="material-icons-outlined" style="font-size: 36px;">facebook</i></a>
+        <a href="https://www.instagram.com/"><i class="material-icons-outlined" style="font-size: 36px;">sports_football</a>
+        <a href="https://twitter.com/"><i class="material-icons-outlined" style="font-size: 36px;">sports_motorsports</a>
       </nav>
     </footer>
   </body>
