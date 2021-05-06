@@ -19,6 +19,7 @@
 
 .login label {
     display: block;
+    margin: 0px
 }
 
 .login input[type=email] {
@@ -165,7 +166,7 @@
     border: 2px solid;
     outline: none;
     padding: 10px;
-    margin: 10px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
 }
 
 .login input[type=password] {
@@ -178,7 +179,7 @@
     border: 2px solid;
     outline: none;
     padding: 10px;
-    margin: 10px 0px 20px 0px;
+    margin: 5px 0px 20px 0px;
 }
 
 .login input[type=submit] {
@@ -192,7 +193,7 @@
 
     width: 38vw;
     margin-left: 43vw;
-    margin-bottom: 10px;   
+    margin-bottom: 6px;   
 }
 
 .login h2 {
@@ -207,6 +208,11 @@
     width: 34vw;
     margin-left: 43vw;
     
+}
+
+.login a:hover {
+    width: 34vw;
+    margin-left: 43vw;
 }
 
 
