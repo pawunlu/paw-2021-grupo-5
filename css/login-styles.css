@@ -1,11 +1,11 @@
-.login {
+.formRegister-Login {
     width: 25vw;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
 
-.cardLogin {
+.sectionRegister-Login {
     display: flex;
     min-width: 80vw;
     width: auto;
@@ -17,12 +17,12 @@
     justify-content: space-evenly;
 }
 
-.login label {
+.sectionRegister-Login .formRegister-Login label {
     display: block;
     margin: 0px
 }
 
-.login input[type=email] {
+.sectionRegister-Login .formRegister-Login input[type=email] {
 
     min-width: 20vw;
     width: auto;
@@ -35,7 +35,7 @@
     margin: 20px 0px;
 }
 
-.login input[type=password] {
+.sectionRegister-Login .formRegister-Login input[type=password] {
 
     min-width: 20vw;
     width: auto;
@@ -48,7 +48,20 @@
     margin: 20px 0px;
 }
 
-.login input[type=submit] {
+.sectionRegister-Login .formRegister-Login input[type=text] {
+
+    min-width: 20vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.sectionRegister-Login .formRegister-Login input[type=submit] {
     /* NO PUEDO PISAR EL BORDER COLOR */
     border: 2px solid var(--principal-color2) !important;
     color: var(--principal-color2);
@@ -62,14 +75,14 @@
     
 }
 
-.login input[type=submit]:hover {
+.sectionRegister-Login .formRegister-Login input[type=submit]:hover {
     border: 2px solid var(--principal-color2);
     color: var(--background-card);
     background: var(--principal-color2);
 }
 
 
-.login hr{ 
+.sectionRegister-Login .formRegister-Login hr{ 
     border: none;
     border-bottom: 2px solid black;
     height: 0vh;
@@ -77,11 +90,11 @@
     width: 22vw;
 }
 
-.login label {
+.sectionRegister-Login .formRegister-Login label {
    margin-top: 10px;
 }
 
-.login a {
+.sectionRegister-Login .formRegister-Login a {
     border: 2px solid var(--principal-color2);
     color: var(--principal-color2);
     display: flex;
@@ -93,7 +106,7 @@
 }
 
 
-.login a:hover {
+.sectionRegister-Login .formRegister-Login a:hover {
     border: 2px solid var(--principal-color2);
     color: var(--background-card);
     background: var(--principal-color2);
@@ -123,6 +136,7 @@
 .telefonos p {
     color: var(--principal-color2);
     text-decoration: underline;
+    margin-bottom: 10vh;
 }
 
 
@@ -133,7 +147,7 @@
     display: none;
 }
 
-.cardLogin {
+.sectionRegister-Login {
     min-width: 80vw;
     width: auto;
     min-height: 40vh;
@@ -142,7 +156,7 @@
     margin: 10px 14px;
 }
 
-.login {
+.sectionRegister-Login .formRegister-Login {
     min-width: 80vw;
     width: auto;
     min-height: 40vh;
@@ -150,13 +164,13 @@
     padding: 14px;
 }
 
-.login hr {
+.sectionRegister-Login .formRegister-Login hr {
     width: 80vw;
     margin: 0px 0px 10px 0px ;
 }
 
 
-.login input[type=email] {
+.sectionRegister-Login .formRegister-Login input[type=email] {
 
     min-width: 74vw;
     width: auto;
@@ -169,7 +183,7 @@
     margin: 5px 0px 20px 0px;
 }
 
-.login input[type=password] {
+.sectionRegister-Login .formRegister-Login input[type=password] {
 
     min-width: 74vw;
     width: auto;
@@ -182,7 +196,7 @@
     margin: 5px 0px 20px 0px;
 }
 
-.login input[type=submit] {
+.sectionRegister-Login .formRegister-Login input[type=submit] {
     /* NO PUEDO PISAR EL BORDER COLOR */
     border: 2px solid var(--principal-color2) !important;
     color: var(--principal-color2);
@@ -196,23 +210,36 @@
     margin-bottom: 6px;   
 }
 
-.login h2 {
+.sectionRegister-Login .formRegister-Login h2 {
     text-align: center;
 }
 
-.login h4 {
+.sectionRegister-Login .formRegister-Login h4 {
     margin: 0px;
 }
 
-.login a {
+.sectionRegister-Login .formRegister-Login a {
     width: 34vw;
     margin-left: 43vw;
     
 }
 
-.login a:hover {
+.sectionRegister-Login .formRegister-Login a:hover {
     width: 34vw;
     margin-left: 43vw;
+}
+
+.sectionRegister-Login .formRegister-Login input[type=text] {
+
+    min-width: 74vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0px 20px 0px;
 }
 
 
