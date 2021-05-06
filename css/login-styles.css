@@ -1,0 +1,212 @@
+.login {
+    width: 25vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardLogin {
+    display: flex;
+    min-width: 80vw;
+    width: auto;
+    margin: 30px 70px;
+    border-radius: 5px;
+    background: var(--background-card);
+    border: 2px solid var(--principal-color2);
+    padding: 40px 60px;
+    justify-content: space-evenly;
+}
+
+
+
+.login input[type=email] {
+
+    min-width: 20vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.login input[type=password] {
+
+    min-width: 20vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.login input[type=submit] {
+    /* NO PUEDO PISAR EL BORDER COLOR */
+    border: 2px solid var(--principal-color2) !important;
+    color: var(--principal-color2);
+    width: 9.5vw;
+    margin-left: 12vw;
+    height: 5vh;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+    
+    
+}
+
+.login input[type=submit]:hover {
+    border: 2px solid var(--principal-color2);
+    color: var(--background-card);
+    background: var(--principal-color2);
+}
+
+
+.login hr{ 
+    border: none;
+    border-bottom: 2px solid black;
+    height: 0vh;
+    margin: 10px 0px;    
+    width: 22vw;
+}
+
+.login label {
+   margin-top: 10px;
+}
+
+.login a {
+    border: 2px solid var(--principal-color2);
+    color: var(--principal-color2);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 4px;
+    width: 9vw;
+    margin-left: 12vw;
+}
+
+
+.login a:hover {
+    border: 2px solid var(--principal-color2);
+    color: var(--background-card);
+    background: var(--principal-color2);
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 4px;
+    width: 9vw;
+    margin-left: 12vw;
+}
+
+.telefonos {
+    background: #ffffff;
+    border-radius: 5px;
+    width: 30vw;
+    
+}
+
+.telefonos article {
+    display: flex;
+    flex-direction: column;
+    margin-left: 33px;
+    margin-top: 30px;
+    font-size: 21px;
+}
+
+.telefonos p {
+    color: var(--principal-color2);
+    text-decoration: underline;
+}
+
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+.telefonos {
+    display: none;
+}
+
+.cardLogin {
+    min-width: 80vw;
+    width: auto;
+    min-height: 40vh;
+    height: auto;
+    padding: 0px;
+    margin: 10px 14px;
+}
+
+.login {
+    min-width: 80vw;
+    width: auto;
+    min-height: 40vh;
+    height: auto;
+    padding: 14px;
+}
+
+.login hr {
+    width: 80vw;
+    margin: 0px 0px 10px 0px ;
+}
+
+
+.login input[type=email] {
+
+    min-width: 73vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.login input[type=password] {
+
+    min-width: 73vw;
+    width: auto;
+    height: 3vh;
+    border-radius: 4px;
+    color: black;
+    border: 2px solid;
+    outline: none;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+}
+
+.login input[type=submit] {
+    /* NO PUEDO PISAR EL BORDER COLOR */
+    border: 2px solid var(--principal-color2) !important;
+    color: var(--principal-color2);
+    height: 6vh;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5px;
+
+    width: 38vw;
+    margin-left: 43vw;
+    margin-bottom: 10px;   
+}
+
+.login h2 {
+    text-align: center;
+}
+
+.login h4 {
+    margin: 0px;
+}
+
+.login a {
+    width: 34vw;
+    margin-left: 43vw;
+    
+}
+
+
+}

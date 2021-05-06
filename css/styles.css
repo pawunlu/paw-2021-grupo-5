@@ -241,6 +241,7 @@ footer nav a {
 .cardNoticias img {
     width: 50vw;
     height: 54vh;
+    box-shadow: 0px 5px 4px #888, 0px -5px 10px #888
 }
 
 
@@ -359,7 +360,7 @@ footer nav a {
     .institucional {
         min-width: 80vw;
         width: auto;
-        min-height: 87vh;
+        min-height: 72vh;
         height: auto;
         /*margin: 0vh 4vw 2vh 5vw;*/
         margin: 14px;
