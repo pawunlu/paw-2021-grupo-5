@@ -17,7 +17,9 @@
     justify-content: space-evenly;
 }
 
-
+.login label {
+    display: block;
+}
 
 .login input[type=email] {
 
@@ -124,7 +126,6 @@
 
 
 /*--------------------------                     MOBILE                              ------------------------------ */
-
 @media screen and (max-width: 768px) {
 
 .telefonos {
@@ -156,7 +157,7 @@
 
 .login input[type=email] {
 
-    min-width: 73vw;
+    min-width: 74vw;
     width: auto;
     height: 3vh;
     border-radius: 4px;
@@ -169,7 +170,7 @@
 
 .login input[type=password] {
 
-    min-width: 73vw;
+    min-width: 74vw;
     width: auto;
     height: 3vh;
     border-radius: 4px;
@@ -210,3 +211,4 @@
 
 
 }
+
