@@ -1,0 +1,51 @@
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: skew(15deg) translateX(-50%);
+  width: 75%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  background-color: #333;
+  opacity: 0.7;
+}
+.banner::before {
+  transform: skew(-15deg) translateX(-50%);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: skew(15deg) translateX(-50%);
+  width: 75%;
+  height: 100%;
+  background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+  background-color: #333;
+  opacity: 0.7;
+}
+.banner {
+  overflow: hidden;
+}
+
+.banner > * {
+  z-index: 100;
+}
+
+.banner {
+  position: relative;
+  min-height: 60vh;
+  /*background-image: url(https://images.unsplash.com/photo-1509473332032-f1ce823d92c4?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=3e2410208e8f8a78e4aa3550fddfbb44);
+    */
+  background-color: white;
+  background-size: cover;
+  display: flex;
+}
+
+h1 {
+  margin: auto;
+}
+body {
+  margin: 10px;
+}

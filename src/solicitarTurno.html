@@ -4,15 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
-    <meta name="description" content="Institucion de Salud" />
+    <meta name="description" content="UNLuPAW Medical Group" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institucion de Salud</title>
+    <title>UNLuPAW Medical Group - Solicitar turno</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/turnos-styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h4>Logo</h4>
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+      <picture>
+        <source media="(min-width:768px)" srcset="/imagenes/logo2.png 768w" />
+        <source media="(min-width:1000px)" srcset="/imagenes/logo2.png 1000w" />
+        <img src="/images/logo2.png" style="width: 85px; height: 100px" />
+      </picture>
+
+      <a href="login.html">Iniciar sesion</a>
     </header>
 
     <!-- Menu -->
@@ -31,19 +41,16 @@
         <li><a href="noticias.html">Noticias</a></li>
       </ul>
     </nav>
-
     <main>
       <section>
-        <h2>Solicitar Turno</h2>
+        <h2>Nuevo Turno</h2>
 
-        <section>
-          <h3>Datos del Profesional</h3>
-          <input type="text" placeholder="Especialidad" />
-          <input type="text" placeholder="Profesionales" />
-        </section>
+        <h3>Datos del Profesional</h3>
+        <input type="text" placeholder="Especialidad" />
+        <input type="text" placeholder="Profesionales" />
 
-        <section>
-          <h3>Datos del Paciente</h3>
+        <h3>Datos del Paciente</h3>
+        <form>
           <input type="text" placeholder="Nombre" />
           <input type="text" placeholder="Apellido" />
           <input type="email" placeholder="Email" />
@@ -52,30 +59,41 @@
           <input type="text" placeholder="Edad" />
           <input type="date" placeholder="Fecha turno" />
           <input type="time" placeholder="Hora turno" />
-        </section>
+        </form>
 
-        <section>
-          <button type="reset">Limpiar</button>
-          <button type="submit">Solicitar</button>
-        </section>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Solicitar</button>
       </section>
     </main>
 
     <footer>
-      <section>
-        <small>Logo</small>
-      </section>
+      <small>Logo</small>
 
       <section>
-        <small>Direccion</small>
-        <small>Telefono</small>
+        <address>
+          El Grito de Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+        </address>
+        <a href="tel:+2364537977" style="color: #ffffff"
+          >Teléfono: 02345-485562
+        </a>
       </section>
 
-      <small>Redes sociales</small>
       <nav>
-        <small><a href="https://www.instagram.com/">Facebook</a></small>
-        <small><a href="https://www.facebook.com/">Instragram</a></small>
-        <small><a href="https://twitter.com/">Twitter</a></small>
+        <a href="https://www.facebook.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >facebook</span
+          ></a
+        >
+        <a href="https://www.instagram.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_football</span
+          ></a
+        >
+        <a href="https://twitter.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_motorsports</span
+          ></a
+        >
       </nav>
     </footer>
   </body>

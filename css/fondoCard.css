@@ -1,0 +1,42 @@
+.genericCard {
+  position: relative;
+  min-height: 60vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.genericCard > * {
+  z-index: 100;
+}
+
+.genericCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: skew(
+20deg
+) translateX(6%);
+  width: 57%;
+  height: 102%;
+  background-image: linear-gradient(
+88deg
+, #00b3f2 60%, #00d5e2 60%);
+/*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
+}
+
+.genericCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4%;
+  transform: skew(
+20deg
+) translateX(5%);
+  width: 43%;
+  height: 102%;
+  background: #06488f;
+}
+
