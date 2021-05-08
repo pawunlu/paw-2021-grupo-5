@@ -1,4 +1,4 @@
-.grid-1 {
+.containerLogin {
   display: grid;
   width: 100%;
   margin: 0 auto;
@@ -18,7 +18,7 @@
 /* specific item styles */
 
 
-.item-2 {
+.telefonos {
   background: #ffff;
   grid-area: main;
   position: relative;
@@ -35,11 +35,11 @@
   
 }
 
-.item-2 > * {
+.telefonos > * {
     z-index: 100;
   }
   
-  .item-2::after {
+.telefonos::after {
     content: "";
     position: absolute;
     top: 0;
@@ -55,7 +55,7 @@
   /*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
   }
   
-  .item-2::before {
+  .telefonos::before {
     content: "";
     position: absolute;
     top: 0;
@@ -68,27 +68,11 @@
     background: #06488f;
   }
   
-.item-2 article a {
+.telefonos article a {
     color: #ffff;
     display: flex; 
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .gridForm {
   background: #ffff;
@@ -112,6 +96,24 @@
 .form label {
     display: block;
     margin: 0px;
+}
+
+.form input[type="text"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+.form input[type="text"]::placeholder {
+  color: #ffff;
 }
 
 
@@ -213,29 +215,53 @@
 
   /*--------------------------                     MOBILE                              ------------------------------ */
 @media screen and (max-width: 768px) {
-    .grid-1 {
-        display: grid;
-        width: 100%;
-        margin: 0 auto;
-       
-        
-        grid-template-areas: "sidebar  sidebar  sidebar"
-                             "sidebar  sidebar  sidebar"
-                             "sidebar  sidebar  sidebar";
+
+.containerLogin {
+  display: flex;
+  margin: 0;
+}
+
+
+.telefonos{
+    display: none;
+}
+
+.gridForm {
+    
+    padding: 3vh 17vw;
+    
+  }
       
-      }
 
 
-    .item-2 {
-        display: none;
-    }
+.form hr {
+  width: 62vw;
+}
 
-    .gridForm {
-        background: #ffff;
-        grid-area: sidebar;
-        padding: 36px;
-        border-right: 1px solid var(--principal-color2);
-        width: 100vw;
-      }
-      
+
+.form input[type="submit"] {
+  width: 63vw;
+}
+
+.form input[type="password"] {
+  width: 57vw;
+}
+
+.form input[type="email"] {
+  width: 57vw;
+}
+
+.form input[type="text"] {
+  width: 57vw;
+}
+
+
+.form a {
+  width: 61.726vw;
+}
+
+.form a:hover {
+  width: 61.726vw;
+
+}
 }

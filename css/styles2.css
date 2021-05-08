@@ -169,94 +169,69 @@ footer section article a {
   color: var(--principal-color2);
 }
   
-.genericCard {
-    position: relative;
-    min-height: 60vh;
-    background-color: white;
-    background-size: cover;
-    display: flex;
-    overflow: hidden;
-}
-
-.genericCard > * {
-    z-index: 100;
-}
-
-.genericCard::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 45%;
-    transform: skew(
-  20deg
-  ) translateX(6%);
-    width: 57%;
-    height: 102%;
-    background-image: linear-gradient(
-  88deg
-  , #00b3f2 60%, #00d5e2 60%);
-  /*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
-}
-  
-.genericCard::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 4%;
-    transform: skew(
-  20deg
-  ) translateX(5%);
-    width: 43%;
-    height: 102%;
-    background: #06488f;
-}
-  
-  
-
 .joaco {
-    position: relative;
-    min-height: 60vh;
-    background-color: white;
-    background-size: cover;
-    display: flex;
-    overflow: hidden;
+  position: relative;
+  min-height: 60vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
 }
 
 .joaco > * {
-    z-index: 100;
+  z-index: 100;
 }
 
 .joaco::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -1%;
-    transform: skew( 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1%;
+  transform: skew( 
 22deg
- ) translateX(6%);
-    width: 8%;
-    height: 102%;
-    background-image: linear-gradient( 
+) translateX(6%);
+  width: 8%;
+  height: 102%;
+  background-image: linear-gradient( 
 88deg
- , #00b3f2 60%, #00d5e2 60%);
+, #00b3f2 60%, #00d5e2 60%);
 
 }
-  
+
 .joaco::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: -7%;
-    transform: skew( 
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -7%;
+  transform: skew( 
 23deg
- ) translateX(5%);
-    width: 13%;
-    height: 102%;
-    background: #06488f;
+) translateX(5%);
+  width: 13%;
+  height: 102%;
+  background: #06488f;
 }
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -274,7 +249,14 @@ footer section article a {
 
 @media screen and (max-width: 768px) {
   header {
-    height: 12vh;
+    height: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
   }
 
   header nav {
@@ -310,6 +292,11 @@ footer section article a {
   main nav a span {
     /* sacar important */
     font-size: 40px !important;
+  }
+
+  footer section{
+    
+    height: auto;
   }
 
   .btn-flotante {

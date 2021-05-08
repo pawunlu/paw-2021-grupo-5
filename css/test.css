@@ -49,3 +49,484 @@ h1 {
 body {
   margin: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.genericCard {
+  position: relative;
+  min-height: 60vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.genericCard > * {
+  z-index: 100;
+}
+
+.genericCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  transform: skew(
+20deg
+) translateX(6%);
+  width: 57%;
+  height: 102%;
+  background-image: linear-gradient(
+88deg
+, #00b3f2 60%, #00d5e2 60%);
+/*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
+}
+
+.genericCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 4%;
+  transform: skew(
+20deg
+) translateX(5%);
+  width: 43%;
+  height: 102%;
+  background: #06488f;
+}
+
+
+
+.joaco {
+  position: relative;
+  min-height: 60vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.joaco > * {
+  z-index: 100;
+}
+
+.joaco::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1%;
+  transform: skew( 
+22deg
+) translateX(6%);
+  width: 8%;
+  height: 102%;
+  background-image: linear-gradient( 
+88deg
+, #00b3f2 60%, #00d5e2 60%);
+
+}
+
+.joaco::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -7%;
+  transform: skew( 
+23deg
+) translateX(5%);
+  width: 13%;
+  height: 102%;
+  background: #06488f;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                       style                                               */
+
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --principal-color1: #00b3de;
+  --principal-color2: #003c70;
+  --secondary-color1: #8a8a8d;
+  --secondary-color2: #4f2c7f;
+  --background-card: #efefef;
+}
+
+body {
+  margin: 0px;
+  background: #ffffff;
+
+  display: grid;
+  width: 100%;    
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto 80px;
+  
+  grid-template-areas: "header   header   header"
+                       "main     main     main"
+                       "footer   footer   footer";
+
+
+}
+
+header {
+  background: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--principal-color2);
+  grid-area: header;
+}
+
+header picture {
+  margin: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+nav li a {
+  color: var(--principal-color2);
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  position: relative;
+}
+
+nav li a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.7s;
+}
+
+nav li a:hover:after {
+  width: 100%;
+  background: var(--principal-color1);
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 170px;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav li ul li {
+  position: relative;
+}
+
+main nav {
+  display: none;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  width: 100%;
+  max-width: 770px;
+  margin: 0 auto;
+  
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto 80px;
+  grid-gap: 20px;
+  
+  grid-template-areas: "main     main     main"
+                       "main     main     main"
+                       "joaco   joaco   joaco";
+      
+}
+
+footer {
+  grid-area: footer;
+}
+
+
+footer nav {
+  display: flex;
+}
+
+footer nav a {
+  width: 40vw;
+  color: #ffff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+footer section {
+  display: flex;
+  background-color: var(--principal-color1);
+  align-items: center;
+  justify-content: space-between;
+  height: 22vh;
+  padding: 1vh 3vw;
+  color: #ffff;
+}
+
+footer section article a {
+  text-decoration: none;
+}
+
+.btn-flotante {
+  display: none;
+}
+
+.cardNoticias {
+  grid-area: joaco;
+  display: flex;
+  background: white;
+  width: 80vw;
+  height: 50vh;
+  border-radius: 5px;
+
+  /*MOMENTANEO*/
+  margin: 50px;
+}
+
+.cardNoticias img {
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cardNoticias article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 110px;
+}
+
+.cardNoticias article::before {
+  content: "";
+  position: absolute;
+  left: 46%;
+  transform: skew(20deg) translateX(5%);
+  width: 11%;
+  height: 50%;
+  background-image: linear-gradient(120deg, #ffffffff, #ffffff);
+}
+
+.cardNoticias h2 {
+  color: var(--principal-color2);
+}
+  
+  
+  
+
+
+
+.joaco {
+  position: relative;
+  min-height: 60vh;
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.joaco > * {
+  z-index: 100;
+}
+
+.joaco::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1%;
+  transform: skew( 
+22deg
+) translateX(6%);
+  width: 8%;
+  height: 102%;
+  background-image: linear-gradient( 
+88deg
+, #00b3f2 60%, #00d5e2 60%);
+
+}
+
+.joaco::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -7%;
+  transform: skew( 
+23deg
+) translateX(5%);
+  width: 13%;
+  height: 102%;
+  background: #06488f;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 14vh;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  main nav {
+    background-color: var(--principal-color2);
+    width: 100vw;
+    box-shadow: none;
+    height: 8vh;
+    bottom: 0px;
+    color: #ffffff;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    font-size: 12px;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    align-items: center;
+  }
+
+  main nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  main nav a span {
+    /* sacar important */
+    font-size: 40px !important;
+  }
+
+  footer section{
+    
+    height: auto;
+  }
+
+  .btn-flotante {
+    display: inline-block;
+    padding: 20px 25px;
+    bottom: 14vh;
+    right: 2.5vh;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: var(--secondary-color2);
+    position: fixed;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+  }
+
+  .cardNoticias {
+    display: flex;
+    background: white;
+    width: 90vw;
+    min-height: 40vh;
+    height: auto;
+    border-radius: 5px;
+    flex-direction: column;
+    /*MOMENTANEO*/
+    margin: 50px 5vw;
+  }
+
+  .cardNoticias img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+  }
+
+  .cardNoticias article {
+    display: flex;
+    margin: 0px 20px;
+  }
+
+  .cardNoticias article::before {
+    display: none;
+  }
+
+  .cardNoticias h2 {
+    margin-bottom: 0px;
+  }
+}
