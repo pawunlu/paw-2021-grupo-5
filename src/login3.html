@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
+    <meta name="description" content="UNLuPAW Medical Group" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNLuPAW Medical Group - Login</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/login-styles.css" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source media="(min-width:768px)" srcset="/imagenes/logo2.png 768w" />
+        <source media="(min-width:1000px)" srcset="/imagenes/logo2.png 1000w" />
+        <img src="/images/logo2.png" style="width: 85px; height: 100px" />
+      </picture>
+
+      <a href="login.html">Iniciar sesion</a>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+      <ul>
+        <li>
+          <a>Atención al Paciente</a>
+          <ul>
+            <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
+            <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
+          </ul>
+        </li>
+        <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
+        <li><a href="obrasSociales.html">Obras Sociales</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!-- section que abarca los 2. Como sacar? -->
+
+      <section class="sectionRegister-Login">
+        <!--   Solucionar tamaño de la section -->
+
+        <section class="formRegister-Login">
+          <h2>Iniciar Sesión</h2>
+          <hr />
+
+          <form>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email_input"
+              id="email_input"
+              placeholder="usuario@gmail.com"
+            />
+
+            <label for="password">Contraseña: </label>
+            <input
+              type="password"
+              name="password_input"
+              id="password_input"
+              placeholder="***********"
+            />
+          </form>
+          <input type="submit" value="Iniciar sesión" />
+
+          <hr />
+          <h4>¿Nuevo en UNLuPAW Medical Group?</h4>
+          <a href="registro.html">Registrate</a>
+        </section>
+
+        <section class="telefonos">
+          <h2 style="text-align: center">Teléfonos</h2>
+          <article>
+            <a
+              href="tel:+2364537977"
+              style="color: black; display: flex; align-items: center"
+            >
+              <span class="material-icons-outlined" style="font-size: 36px"
+                >phone</span
+              >
+              11 1234-5678
+            </a>
+
+            <p>Atención telefónica las 24hs</p>
+
+            <a
+              href="tel:+2364537977"
+              style="color: black; display: flex; align-items: center"
+            >
+              <span class="material-icons-outlined" style="font-size: 36px"
+                >phone</span
+              >
+              11 1234-5678
+            </a>
+
+            <p>Lunes a viernes de 8:00 a 20:00 Hs</p>
+
+            <a
+              href="tel:+2364537977"
+              style="color: black; display: flex; align-items: center"
+            >
+              <span class="material-icons-outlined" style="font-size: 36px"
+                >phone</span
+              >
+              11 1234-5678
+            </a>
+
+            <p>Urgencias</p>
+          </article>
+        </section>
+      </section>
+
+      <!-- Puedo reutilizar la nav de arriba?
+      <nav class="navbar">
+        <a href="index.html"><span class="material-icons-outlined">home</span>Inicio</a>
+        <a href="profesionales.html"><span class="material-icons-outlined">groups</span>Profesionales</a>
+        <a href="noticias.html"><span class="material-icons-outlined">feed</span>Noticias</a>
+        <a href="obrasSociales.html"><span class="material-icons-outlined">emergency</span>Obras Sociales</a>
+      </nav>
+        
+ -->
+    </main>
+
+    <footer>
+      <small>Logo</small>
+
+      <section>
+        <address>
+          El Grito de Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+        </address>
+        <a href="tel:+2364537977" style="color: #ffffff"
+          >Teléfono: 02345-485562
+        </a>
+      </section>
+
+      <nav>
+        <a href="https://www.facebook.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >facebook</span
+          ></a
+        >
+        <a href="https://www.instagram.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_football</span
+          ></a
+        >
+        <a href="https://twitter.com/"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_motorsports</span
+          ></a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

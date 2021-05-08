@@ -11,8 +11,18 @@
 
 body {
   margin: 0px;
-  /* background:linear-gradient(247deg, var(--principal-color1), var(--principal-color1) 52%, white 48%, white);*/
-  background: #dadada;
+  background: #ffffff;
+
+  display: grid;
+  width: 100%;    
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto 80px;
+  
+  grid-template-areas: "header   header   header"
+                       "main     main     main"
+                       "footer   footer   footer";
+
+
 }
 
 header {
@@ -21,6 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid var(--principal-color2);
+  grid-area: header;
 }
 
 header picture {
@@ -78,6 +89,16 @@ nav li ul li {
 main nav {
   display: none;
 }
+
+main {
+  grid-area: main;
+      
+}
+
+footer {
+  grid-area: footer;
+}
+
 
 footer nav {
   display: flex;
