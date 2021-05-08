@@ -50,42 +50,6 @@ body {
   margin: 10px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .genericCard {
   position: relative;
   min-height: 60vh;
@@ -104,15 +68,11 @@ body {
   position: absolute;
   top: 0;
   left: 45%;
-  transform: skew(
-20deg
-) translateX(6%);
+  transform: skew(20deg) translateX(6%);
   width: 57%;
   height: 102%;
-  background-image: linear-gradient(
-88deg
-, #00b3f2 60%, #00d5e2 60%);
-/*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
+  background-image: linear-gradient(88deg, #00b3f2 60%, #00d5e2 60%);
+  /*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
 }
 
 .genericCard::before {
@@ -120,15 +80,11 @@ body {
   position: absolute;
   top: 0;
   left: 4%;
-  transform: skew(
-20deg
-) translateX(5%);
+  transform: skew(20deg) translateX(5%);
   width: 43%;
   height: 102%;
   background: #06488f;
 }
-
-
 
 .joaco {
   position: relative;
@@ -148,15 +104,10 @@ body {
   position: absolute;
   top: 0;
   left: -1%;
-  transform: skew( 
-22deg
-) translateX(6%);
+  transform: skew(22deg) translateX(6%);
   width: 8%;
   height: 102%;
-  background-image: linear-gradient( 
-88deg
-, #00b3f2 60%, #00d5e2 60%);
-
+  background-image: linear-gradient(88deg, #00b3f2 60%, #00d5e2 60%);
 }
 
 .joaco::before {
@@ -164,36 +115,11 @@ body {
   position: absolute;
   top: 0px;
   left: -7%;
-  transform: skew( 
-23deg
-) translateX(5%);
+  transform: skew(23deg) translateX(5%);
   width: 13%;
   height: 102%;
   background: #06488f;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*                       style                                               */
 
@@ -213,15 +139,14 @@ body {
   background: #ffffff;
 
   display: grid;
-  width: 100%;    
+  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 80px auto 80px;
-  
-  grid-template-areas: "header   header   header"
-                       "main     main     main"
-                       "footer   footer   footer";
 
-
+  grid-template-areas:
+    "header   header   header"
+    "main     main     main"
+    "footer   footer   footer";
 }
 
 header {
@@ -295,21 +220,20 @@ main {
   width: 100%;
   max-width: 770px;
   margin: 0 auto;
-  
+
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 80px auto 80px;
   grid-gap: 20px;
-  
-  grid-template-areas: "main     main     main"
-                       "main     main     main"
-                       "joaco   joaco   joaco";
-      
+
+  grid-template-areas:
+    "main     main     main"
+    "main     main     main"
+    "joaco   joaco   joaco";
 }
 
 footer {
   grid-area: footer;
 }
-
 
 footer nav {
   display: flex;
@@ -380,11 +304,6 @@ footer section article a {
 .cardNoticias h2 {
   color: var(--principal-color2);
 }
-  
-  
-  
-
-
 
 .joaco {
   position: relative;
@@ -404,15 +323,10 @@ footer section article a {
   position: absolute;
   top: 0;
   left: -1%;
-  transform: skew( 
-22deg
-) translateX(6%);
+  transform: skew(22deg) translateX(6%);
   width: 8%;
   height: 102%;
-  background-image: linear-gradient( 
-88deg
-, #00b3f2 60%, #00d5e2 60%);
-
+  background-image: linear-gradient(88deg, #00b3f2 60%, #00d5e2 60%);
 }
 
 .joaco::before {
@@ -420,22 +334,11 @@ footer section article a {
   position: absolute;
   top: 0px;
   left: -7%;
-  transform: skew( 
-23deg
-) translateX(5%);
+  transform: skew(23deg) translateX(5%);
   width: 13%;
   height: 102%;
   background: #06488f;
 }
-
-
-
-
-
-
-
-
-
 
 /*--------------------------                     MOBILE                              ------------------------------ */
 
@@ -481,8 +384,7 @@ footer section article a {
     font-size: 40px !important;
   }
 
-  footer section{
-    
+  footer section {
     height: auto;
   }
 

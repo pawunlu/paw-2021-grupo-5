@@ -189,10 +189,14 @@ footer nav a {
   width: auto;
   height: 8vh;
   border-radius: 4px;
-  color: black;
+  color: #ffffff;
   border: 2px solid;
   outline: none;
   padding: 10px;
+}
+
+.serviciosMedicos input[type="search"]::placeholder {
+  color: #ffff;
 }
 
 .cardDatos {
