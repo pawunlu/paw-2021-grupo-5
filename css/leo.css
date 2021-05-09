@@ -1,142 +1,3 @@
-:root {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-
-  --principal-color1: #00b3de;
-  --principal-color2: #003c70;
-  --principal-color3: #00d5e2; 
-
-  --secondary-color1: #8a8a8d;
-  --secondary-color2: #4f2c7f;
-  --background-card: #efefef;
-}
-  
-
-body {
-  margin: 0px;
-  background: #ffffff;
-  display: grid;
-  width: 100%;    
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px auto 80px;
-  grid-template-areas: "header   header   header"
-                        "main     main     main"
-                        "footer   footer   footer";
-}
-
-/*--------------- HEADER ---------------*/
-header {
-  background: #ffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid var(--principal-color2);
-  grid-area: header;
-}
-  
-header picture {
-  margin: 12px;
-}
-  
-a {
-  text-decoration: none;
-}
-
-ul,
-ol {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0px;
-}
-
-nav li a {
-  color: var(--principal-color2);
-  text-decoration: none;
-  padding: 10px 12px;
-  display: block;
-  position: relative;
-}
-
-nav li a:after {
-  content: "";
-  display: block;
-  margin: auto;
-  height: 2px;
-  width: 0px;
-  transition: all 0.7s;
-}
-
-nav li a:hover:after {
-  width: 100%;
-  background: var(--principal-color1);
-}
-
-nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 170px;
-}
-
-nav li:hover > ul {
-  display: block;
-}
-
-nav li ul li {
-  position: relative;
-}
-
-main nav {
-  display: none;
-}
-  
-main {
-  grid-area: main;
-      
-}
-  
-/*--------------- FOOTER ---------------*/
-
-footer {
-  grid-area: footer;
-}
-
-footer nav {
-  display: flex;
-}
-
-footer nav a {
-  width: 40vw;
-  color: #ffff;
-  display: flex;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-}
-
-footer nav a span:hover {
-  animation: mySpinner 4s;
-  animation-iteration-count: infinite;
-}
-
-footer section {
-  display: flex;
-  background-color: var(--principal-color1);
-  align-items: center;
-  justify-content: space-between;
-  height: 22vh;
-  padding: 1vh 3vw;
-  color: #ffff;
-}
-
-footer section article a {
-  text-decoration: none;
-}
-
-.btn-flotante {
-  display: none;
-}
-
 
 /*--------------- PROFESIONALES / OBRAS SOCIALES ---------------*/
 
@@ -278,6 +139,7 @@ footer section article a {
 
 
 /*--------------- COPIADO ---------------*/
+
 input[type="search"] {
   min-width: 26vw;
   width: auto;
@@ -313,10 +175,6 @@ input[type="search"]::placeholder {
   background: #ffff;
   border: 2px solid var(--principal-color2);
 }
-
-
-
-
 
 .card-persona input[type="text"] {
   min-width: 26.3vw;
