@@ -228,7 +228,7 @@ footer section article a {
   overflow: hidden;
 }
 
-.card-persona img {
+.card-persona .img-persona {
   grid-area: img-card;
   margin: 0.5rem;
   border-radius: 100px;
@@ -239,13 +239,15 @@ footer section article a {
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
-.card-persona img {
+.card-persona .img-ob-s {
   grid-area: img-card;
-  border-radius: 4px;
+  margin: 0.5rem;
+  border-radius: 8px;
+  width: 100%;
   box-shadow:
              0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
-
 }
 
 .card-persona .nombre, 
