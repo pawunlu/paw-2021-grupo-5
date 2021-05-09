@@ -5,6 +5,7 @@
 .listadoTurnos header {
     background-color: transparent;
     border-bottom: none;
+    color: var(--principal-color2);
 }
 
 .listadoTurnos select {
