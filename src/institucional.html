@@ -4,80 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
-    <meta name="description" content="Institucion de Salud" />
+    <meta name="description" content="UNLuPAW Medical Group" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institucion de Salud</title>
+    <title>UNLuPAW Medical Group</title>
+    <link rel="stylesheet" href="../css/leo.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h4>Logo</h4>
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+      <picture>
+        <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
+        <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
+        <a href="index.html"><img src="/images/logo2.png"/></a>
+      </picture>
+
+      <nav>
+        <ul>
+          <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
+          <li><a href="obrasSociales.html">Obras Sociales</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+        </ul>
     </header>
 
-    <!-- Menu -->
-    <nav>
-      <ul>
-        <li>
-          <a>Atención al Paciente</a>
-          <ul>
-            <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
-            <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
-          </ul>
-        </li>
-        <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
-        <li><a href="obrasSociales.html">Obras Sociales</a></li>
-        <li><a href="institucional.html">Institucional</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-      </ul>
-    </nav>
+
     <main>
-      <section>
-        <section>
-          <h2>Directivos</h2>
-          <article>
-            <img />
-            <h3>Nombre Apellido</h3>
-            <h4>Cargo</h4>
-            <h4>Email</h4>
-          </article>
-          <article>
-            <img />
-            <h3>Nombre Apellido</h3>
-            <h4>Cargo</h4>
-            <h4>Email</h4>
-          </article>
-          <article>
-            <img />
-            <h3>Nombre Apellido</h3>
-            <h4>Cargo</h4>
-            <h4>Email</h4>
-          </article>
+      
+      <section class="institucional">
+        <header>
+          <h2>Nosotros</h2>
+        </header>
+        
+        <article class="nosotros">          
+            <p>
+              PAWUNLu Medical Group es la Institución Médica por excelencia en la ciudad de Chivilcoy. Con 80 años al servicio de la salud, brindando atención médica personalizada de alta y mediana complejidad, atención ambulatoria y servicios de emergencia; se distingue por su compromiso permanente con el cuidado integral del paciente.
+            </p> 
+            <p>
+              Un cuerpo médico de excelencia, con especialistas reconocidos en diferentes áreas y un sólido equipo de profesionales técnicos y administrativos que trabajan día a día con la excelencia como premisa, conforman el capital humano que permite a más de 50 mil pacientes por mes confiar su salud al Sanatorio.
+            </p>
+            <p>
+              El excelente nivel médico, la amplia capacidad de prestaciones y el compromiso de cada profesional con la atención al paciente, hacen de este Sanatorio, un centro médico de primer nivel, donde la salud está siempre primero.
+            </p>
+        </article>
+
+        <article class="vision-mision">
+          <h2>Visión</h2>
+          <p>
+            Sanatorio Corporación Médica San Martín trabaja con el firme propósito de brindar a la comunidad la mejor atención médica, basada en evidencia científica, investigación y contenido ético, acompañando al paciente y su familia; ofreciendo a la vez un ámbito de desarrollo atractivo para su personal y equipo de profesionales, que favorezca su compromiso y sentido de pertenencia con la Institución.
+          </p>
+          <h2>Misión</h2>
+          <p>
+            Ser la organización modelo en el cuidado y restablecimiento de la salud, manteniendo la excelencia en la calidad de atención y respeto por la dignidad de las personas.
+          </p>
+        </article>
+
+        <section class="directivos">
+          <!--header>        
+            <h2>Directivos</h2>
+          </header-->
+        
+          <section class="card-persona">
+            <img src="../images/doctor.jpg" alt="">
+            <article>
+              <h1 class="nombre">Dr. Luis Cordoba</h1>
+              <ul class="datos-persona">
+                  <li class="cargo">Director General</li>
+                  <li>Email: director@mail.com</li>
+              </ul>
+            </article>          
+          </section>
+  
+          <section class="card-persona">
+            <img src="../images/doctor.jpg" alt="">
+            <article>
+              <h1 class="nombre">Dr. Claudio Ferreira</h1>
+              <ul class="datos-persona">
+                  <li class="cargo">Director Medico</li>
+                  <li>Email: director-medica@mail.com</li>
+              </ul>
+            </article>          
+          </section>
+  
+          <section class="card-persona">
+            <img src="../images/doctor.jpg" alt="">
+            <article>
+              <h1 class="nombre">Dr. Marcelo Rodriguez</h1>
+              <ul class="datos-persona">
+                  <li class="cargo">Director de Administración y Finanza</li>
+                  <li>Email: director-adm-fin@mail.com</li>
+              </ul>
+            </article>          
+          </section>
+  
         </section>
 
-        <section>
-          <h2>Misión</h2>
-          <p>Descripcion de la institucion de salud, mision y valores...</p>
-        </section>
+
+        
       </section>
+
+
+
+
+      
+
+
+      <a href="tel:+2364537977" class="btn-flotante">
+        <i class="material-icons-outlined" style="font-size: 28px">phone</i></a
+      >
+
+      <nav>
+        <a href="index2.html"
+          ><span class="material-icons-outlined">home</span>Inicio</a
+        >
+        <a href="profesionales.html"
+          ><span class="material-icons-outlined">groups</span>Profesionales</a
+        >
+        <a href="noticias.html"
+          ><span class="material-icons-outlined">feed</span>Noticias</a
+        >
+        <a href="obrasSociales.html"
+          ><span class="material-icons-outlined">emergency</span>Obras
+          Sociales</a
+        >
+      </nav>
     </main>
 
     <footer>
-      <section>
-        <small>Logo</small>
-      </section>
-
-      <section>
-        <small>Direccion</small>
-        <small>Telefono</small>
-      </section>
-
-      <small>Redes sociales</small>
       <nav>
-        <small><a href="https://www.instagram.com/">Facebook</a></small>
-        <small><a href="https://www.facebook.com/">Instragram</a></small>
-        <small><a href="https://twitter.com/">Twitter</a></small>
+        <a href="https://www.facebook.com/" style="background: #4f2c7f"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >facebook</span
+          ></a
+        >
+        <a href="https://www.instagram.com/" style="background: #4f2c7fa1"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_football</span
+          ></a
+        >
+        <a href="https://twitter.com/" style="background: #4f2c7f61"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_motorsports</span
+          ></a
+        >
       </nav>
+
+      <section>
+        <article>
+          <address>
+            <span class="material-icons-outlined">location_on</span> El Grito de
+            Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+          </address>
+          <a href="tel:+2364537977" style="color: #ffffff"
+            ><span class="material-icons-outlined">phone</span> Teléfono:
+            02345-485562
+          </a>
+        </article>
+
+        <img src="/images/logo3.png" />
+      </section>
     </footer>
   </body>
 </html>

@@ -1,0 +1,360 @@
+:root {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+  --principal-color1: #00b3de;
+  --principal-color2: #003c70;
+  --principal-color3: #00d5e2; 
+
+  --secondary-color1: #8a8a8d;
+  --secondary-color2: #4f2c7f;
+  --background-card: #efefef;
+}
+  
+
+body {
+  margin: 0px;
+  background: #ffffff;
+  display: grid;
+  width: 100%;    
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas: "header   header   header"
+                        "main     main     main"
+                        "footer   footer   footer";
+}
+
+/*--------------- HEADER ---------------*/
+header {
+  background: #ffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--principal-color2);
+  grid-area: header;
+}
+  
+header picture {
+  margin: 12px;
+}
+  
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+nav li a {
+  color: var(--principal-color2);
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  position: relative;
+}
+
+nav li a:after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  transition: all 0.7s;
+}
+
+nav li a:hover:after {
+  width: 100%;
+  background: var(--principal-color1);
+}
+
+nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 170px;
+}
+
+nav li:hover > ul {
+  display: block;
+}
+
+nav li ul li {
+  position: relative;
+}
+
+main nav {
+  display: none;
+}
+  
+main {
+  grid-area: main;
+      
+}
+  
+/*--------------- FOOTER ---------------*/
+
+footer {
+  grid-area: footer;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer nav a {
+  width: 40vw;
+  color: #ffff;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+footer nav a span:hover {
+  animation: mySpinner 4s;
+  animation-iteration-count: infinite;
+}
+
+footer section {
+  display: flex;
+  background-color: var(--principal-color1);
+  align-items: center;
+  justify-content: space-between;
+  height: 22vh;
+  padding: 1vh 3vw;
+  color: #ffff;
+}
+
+footer section article a {
+  text-decoration: none;
+}
+
+.btn-flotante {
+  display: none;
+}
+
+
+/*--------------- PROFESIONALES ---------------*/
+
+.profesionales {
+  grid-template-areas:  "header-prof"
+                        "buscador-prof"
+                        "cards-prof";
+  margin: 1rem 2rem 1rem 2rem;
+  display: grid;
+
+  background: rgb(255,255,255);   
+  background: linear-gradient(73deg, rgba(255,255,255,1) 25%, rgba(0,60,112,1) 25%, rgba(18,81,129,1) 50%, rgba(0,179,222,1) 50%, rgba(0,194,224,1) 75%, rgba(0,213,226,1) 75%);
+}
+
+.profesionales header {
+  grid-area: header-prof;
+  color: var(--principal-color2);
+}
+
+.profesionales .buscador {
+  grid-area: buscador-prof;
+  margin: 2rem;
+}
+
+.profesionales .resultado-busqueda {
+  grid-area: cards-prof;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 1rem;
+}
+
+/*--------------- INSTITUCIONAL ---------------*/
+
+.institucional {
+  grid-template-areas:  "header-nos"
+                        "nosotros"
+                        "vision-mision"
+                        "directivos-nos";
+  display: grid;
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.institucional header {
+  grid-area: header-nos;
+  color: var(--principal-color2);
+}
+
+.institucional .nosotros{
+  grid-area: nosotros;
+}
+
+.institucional .vision-mision{
+  grid-area: vision-mision;
+}
+
+.institucional .directivos {
+  grid-area: directivos-nos;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 5rem;
+  border: 1px solid blue;
+}
+
+
+
+
+/*--------------- TARJETA PERSONA ---------------*/
+
+.card-persona {
+  border: 3px solid var(--secondary-color2);
+  background: var(--background-card);
+  border-radius: 8px;
+  width: 40%;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  grid-template-areas:  "img-card    nombre-card"
+                        "img-card    datos-card"
+                        "boton-card  boton-card";
+  display: grid;
+  overflow: hidden;
+}
+
+.card-persona img {
+  grid-area: img-card;
+  margin: 0.5rem;
+  border-radius: 100px;
+  width: 100%;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.card-persona .nombre {
+  grid-area: nombre-card;
+  color: var(--secondary-color2);
+  font-size: 1.5rem;
+}
+
+.card-persona .cargo {
+  color: var(--secondary-color1);
+  font-size: 1rem;
+  font-weight: bold
+}
+
+.card-persona .datos-persona {
+  display: flex;
+  grid-area: datos-card;
+  flex-direction: column;
+}
+
+.card-persona .boton-prof {
+  grid-area: boton-card;
+  align-items: center;
+}
+
+/*--------------- COPIADO ---------------*/
+
+.card-persona input[type="submit"] {
+  color: #ffff;
+  width: 18vw;
+  height: 3em;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 1px;
+  background: var(--principal-color2);
+  margin: 20px 0px;
+  transition: all 1s ease;
+  position: relative;
+}
+
+.card-persona input[type="submit"]:hover {
+  color: var(--principal-color2);
+  background: #ffff;
+  border: 2px solid var(--principal-color2);
+}
+
+
+
+
+
+.card-persona input[type="text"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 20px 0px;
+}
+
+
+
+
+
+
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+
+@media screen and (max-width: 768px) {
+    header {
+      height: 12vh;
+    }
+  
+    header nav {
+      display: none;
+    }
+  
+    main nav {
+      background-color: var(--principal-color2);
+      width: 100vw;
+      box-shadow: none;
+      height: 8vh;
+      bottom: 0px;
+      color: #ffffff;
+      position: fixed;
+      z-index: 99;
+      display: flex;
+      font-size: 12px;
+      justify-content: space-evenly;
+      padding-top: 5px;
+      align-items: center;
+    }
+  
+    main nav a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  
+    main nav a span {
+      /* sacar important */
+      font-size: 40px !important;
+    }
+  
+    .btn-flotante {
+      display: inline-block;
+      padding: 20px 25px;
+      bottom: 14vh;
+      right: 2.5vh;
+      color: #ffffff;
+      border-radius: 20px;
+      background-color: var(--secondary-color2);
+      position: fixed;
+      transition: all 300ms ease 0ms;
+      z-index: 99;
+    }
+}

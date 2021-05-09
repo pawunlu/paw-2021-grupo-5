@@ -242,7 +242,8 @@ footer section article a {
   background: #06488f;
 }
 
-.serviciosMedicos input[type="search"] {
+.serviciosMedicos input[type="search"],
+.profesionales input[type="search"] {
   min-width: 26vw;
   width: auto;
   height: 7vh;
@@ -255,7 +256,8 @@ footer section article a {
   padding: 10px;
 }
 
-.serviciosMedicos input[type="search"]::placeholder {
+.serviciosMedicos input[type="search"]::placeholder,
+.profesionales input[type="search"]::placeholder {
   color: #ffff;
 }
 
