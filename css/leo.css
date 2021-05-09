@@ -138,12 +138,13 @@ footer section article a {
 }
 
 
-/*--------------- PROFESIONALES ---------------*/
+/*--------------- PROFESIONALES / OBRAS SOCIALES ---------------*/
 
-.profesionales {
-  grid-template-areas:  "header-prof"
-                        "buscador-prof"
-                        "cards-prof";
+.profesionales, 
+.obras-sociales {
+  grid-template-areas:  "header-container"
+                        "buscador-container"
+                        "cards-container";
   margin: 1rem 2rem 1rem 2rem;
   display: grid;
 
@@ -151,18 +152,21 @@ footer section article a {
   background: linear-gradient(73deg, rgba(255,255,255,1) 25%, rgba(0,60,112,1) 25%, rgba(18,81,129,1) 50%, rgba(0,179,222,1) 50%, rgba(0,194,224,1) 75%, rgba(0,213,226,1) 75%);
 }
 
-.profesionales header {
-  grid-area: header-prof;
+.profesionales header, 
+.obras-sociales header {
+  grid-area: header-container;
   color: var(--principal-color2);
 }
 
-.profesionales .buscador {
-  grid-area: buscador-prof;
+.profesionales .buscador, 
+.obras-sociales .buscador {
+  grid-area: buscador-container;
   margin: 2rem;
 }
 
-.profesionales .resultado-busqueda {
-  grid-area: cards-prof;
+.profesionales .resultado-busqueda, 
+.obras-sociales .resultado-busqueda {
+  grid-area: cards-container;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
@@ -235,7 +239,17 @@ footer section article a {
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
-.card-persona .nombre {
+.card-persona img {
+  grid-area: img-card;
+  border-radius: 4px;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+
+.card-persona .nombre, 
+.card-ob-social .nombre {
   grid-area: nombre-card;
   color: var(--secondary-color2);
   font-size: 1.5rem;
@@ -247,18 +261,37 @@ footer section article a {
   font-weight: bold
 }
 
-.card-persona .datos-persona {
+.card-persona .datos-persona,
+.card-ob-social .datos-persona {
   display: flex;
   grid-area: datos-card;
   flex-direction: column;
 }
 
-.card-persona .boton-prof {
+.card-persona .boton-prof,
+.card-ob-social .boton-prof {
   grid-area: boton-card;
   align-items: center;
 }
 
+
 /*--------------- COPIADO ---------------*/
+input[type="search"] {
+  min-width: 26vw;
+  width: auto;
+  height: 7vh;
+  border-radius: 3px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+}
+
+input[type="search"]::placeholder {
+  color: #ffff;
+}
 
 .card-persona input[type="submit"] {
   color: #ffff;
