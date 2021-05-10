@@ -94,6 +94,10 @@
     padding: 0em;
 }    
 
+.listadoTurnos .turnero-flotante{
+    display: none;
+}
+
 .listadoTurnos .fichas {
     width: 87vw;
     gap: 0.8em;

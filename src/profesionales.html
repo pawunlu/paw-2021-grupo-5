@@ -4,110 +4,144 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
-    <meta name="description" content="Institucion de Salud" />
+    <meta name="description" content="UNLuPAW Medical Group - Profecionales" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Institucion de Salud</title>
+    <title>UNLuPAW Medical Group - Profesionales</title>
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/leo.css" type="text/css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h4>Logo</h4>
-      <h1>Instuticion de Salud</h1>
-      <button>Iniciar sesion</button>
+      <picture>
+        <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
+        <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
+        <a href="index.html"><img src="/images/logo.png" alt="UNLuPAW Medical Group"/></a>
+      </picture>
+      <nav>
+        <ul>
+          <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
+          <li><a href="obrasSociales.html">Obras Sociales</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Menu -->
-    <nav>
-      <ul>
-        <li>
-          <a>Atención al Paciente</a>
-          <ul>
-            <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
-            <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
-          </ul>
-        </li>
-        <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
-        <li><a href="obrasSociales.html">Obras Sociales</a></li>
-        <li><a href="institucional.html">Institucional</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-      </ul>
-    </nav>
-
     <main>
-      <section>
+      <section class="profesionales">
         <h2>Profesionales</h2>
-        <input
-          type="search"
-          placeholder="Buscar por profesional o por especialidad"
-        />
-        <article>
-          <img />
-          <h3>Nombre Apellido</h3>
-          <h3>Especialidad</h3>
+        
+        <input class="buscador" type="search" placeholder="Buscar por profesional o por especialidad"/>
 
-          <h3>Dias de atención</h3>
-          <h3>Lunes - Miercoles y viernes</h3>
+        <section class="resultado-busqueda">
+          
+          <section class="card-persona">
+            <h4 class="nombre">Dr. Luis Cordoba</h4>
+            <h3 class="cargo">Cardiología</h3>
+            <img class="img-persona" src="../images/personas/persona_1.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+                <li><b>Dias de atención:</b> Lunes - Miercoles - viernes</li>
+                <li><b>Horario de atención:</b> 14:00 - 18:00 Hs</li>
+                <li><b>Obras Sociales:</b> OSDE - IOMA</li>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>
+          
+          <section class="card-persona">
+            <h4 class="nombre">Dr. Antonio Martinez</h4>
+            <h3 class="cargo">Medicina General</h3>
+            <img class="img-persona" src="../images/personas/persona-anonima.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Dias de atención:</b> Lunes - Miercoles - viernes</li>
+              <li><b>Horario de atención:</b> 14:00 - 18:00 Hs</li>
+              <li><b>Obras Sociales:</b> OSDE - IOMA</li>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>    
 
-          <h3>Horario de atención</h3>
-          <h3>14:00 - 18:00 Hs</h3>
+          <section class="card-persona">
+            <h4 class="nombre">Dra. Sofia Toledo</h4>
+            <h3 class="cargo">Pediatría</h3>
+            <img class="img-persona" src="../images/personas/persona-anonima.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Dias de atención:</b> Lunes - Miercoles - viernes</li>
+              <li><b>Horario de atención:</b> 14:00 - 18:00 Hs</li>
+              <li><b>Obras Sociales:</b> OSDE - IOMA</li>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>    
 
-          <h3>Obras Sociales</h3>
-          <h3>OSDE - IOMA</h3>
+          <section class="card-persona">
+            <h4 class="nombre">Dr. Martin Lopez</h4>
+            <h3 class="cargo">Dermatología</h3>
+            <img class="img-persona" src="../images/personas/persona_2.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Dias de atención:</b> Lunes - Miercoles - viernes</li>
+              <li><b>Horario de atención:</b> 14:00 - 18:00 Hs</li>
+              <li><b>Obras Sociales:</b> OSDE - IOMA</li>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>   
 
-          <button>Solicitar turno</button>
-        </article>
+        </section>
 
-        <article>
-          <img />
-          <h3>Nombre Apellido</h3>
-          <h3>Especialidad</h3>
-
-          <h3>Dias de atención</h3>
-          <h3>Lunes - Miercoles y viernes</h3>
-
-          <h3>Horario de atención</h3>
-          <h3>14:00 - 18:00 Hs</h3>
-
-          <h3>Obras Sociales</h3>
-          <h3>OSDE - IOMA</h3>
-
-          <button>Solicitar turno</button>
-        </article>
-
-        <article>
-          <img />
-          <h3>Nombre Apellido</h3>
-          <h3>Especialidad</h3>
-
-          <h3>Dias de atención</h3>
-          <h3>Lunes - Miercoles y viernes</h3>
-
-          <h3>Horario de atención</h3>
-          <h3>14:00 - 18:00 Hs</h3>
-
-          <h3>Obras Sociales</h3>
-          <h3>OSDE - IOMA</h3>
-
-          <button>Solicitar turno</button>
-        </article>
       </section>
+        
+      <a href="tel:+2364537977" class="btn-flotante">
+        <i class="material-icons-outlined" style="font-size: 28px">phone</i></a
+      >
+
+      <nav>
+        <a href="index.html"><span class="material-icons-outlined">home</span>Inicio</a>
+        <a href="profesionales.html"><span class="material-icons-outlined">groups</span>Profesionales</a>
+        <a href="noticias.html"><span class="material-icons-outlined">feed</span>Noticias</a>
+        <a href="obrasSociales.html"><span class="material-icons-outlined">emergency</span>Obras Sociales</a>
+      </nav>
     </main>
 
     <footer>
-      <section>
-        <small>Logo</small>
-      </section>
-
-      <section>
-        <small>Direccion</small>
-        <small>Telefono</small>
-      </section>
-
-      <small>Redes sociales</small>
       <nav>
-        <small><a href="https://www.instagram.com/">Facebook</a></small>
-        <small><a href="https://www.facebook.com/">Instragram</a></small>
-        <small><a href="https://twitter.com/">Twitter</a></small>
+        <a href="https://www.facebook.com/" style="background: #4f2c7f"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >facebook</span
+          ></a
+        >
+        <a href="https://www.instagram.com/" style="background: #4f2c7fa1"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_football</span
+          ></a
+        >
+        <a href="https://twitter.com/" style="background: #4f2c7f61"
+          ><span class="material-icons-outlined" style="font-size: 36px"
+            >sports_motorsports</span
+          ></a
+        >
       </nav>
+
+      <section>
+        <article>
+          <address>
+            <span class="material-icons-outlined">location_on</span> El Grito de
+            Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+          </address>
+          <a href="tel:+2364537977" style="color: #ffffff"
+            ><span class="material-icons-outlined">phone</span> Teléfono:
+            02345-485562
+          </a>
+        </article>
+
+        <img src="/images/logo3.png" alt="UNLuPAW Medical Group"/>
+      </section>
     </footer>
   </body>
 </html>
