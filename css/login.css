@@ -234,19 +234,13 @@
 
 .sectionForm form input[type="reset"] {
   color: var(--principal-color2);
-  width: 7vw;
-  height: 3em;
-  font-weight: bold;
+  width: 2em;
+  height: 2em;
   border-style: none;
-  border-radius: 1px;
   background: #ffff;
-  margin: 20px 0px;
-  margin-left: 21vw;
-  transition: all 1s ease;
-  position: relative;
+  background-color: transparent;
+  outline: none;
 }
-
-
 
 
 

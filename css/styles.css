@@ -97,7 +97,7 @@ nav li ul li {
   position: relative;
 }
 
-main nav {
+.navbar {
   display: none;
 }
 
@@ -142,6 +142,10 @@ footer section article a {
 }
 
 .btn-flotante {
+  display: none;
+}
+
+.btn-iniciarSesion{
   display: none;
 }
 
@@ -499,7 +503,20 @@ footer h2 {
     display: none;
   }
 
-  main nav {
+  .btn-iniciarSesion{
+    display: flex;
+    background: var(--principal-color1);
+    color: white;
+    width: 30vw;
+    height: 4vh;
+    padding: 0.3em 1em 0.3em 1em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    
+  }
+
+  .navbar {
     background-color: var(--principal-color2);
     width: 100vw;
     box-shadow: none;
@@ -515,7 +532,7 @@ footer h2 {
     align-items: center;
   }
 
-  main nav a {
+  .navbar a {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -526,7 +543,7 @@ footer h2 {
     margin-bottom: 1em;
   }
 
-  main nav a span {
+  .navbar a span {
     /* sacar important */
     font-size: 40px !important;
   }
@@ -714,6 +731,6 @@ footer h2 {
   }
 
 
-  
+
 
 }
