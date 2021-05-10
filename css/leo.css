@@ -1,0 +1,155 @@
+/*--------------- PROFESIONALES / OBRAS SOCIALES / INSTITUCIONAL ---------------*/
+
+.profesionales, 
+.obras-sociales,
+.institucional {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 2rem 1rem 2rem;
+  background: rgb(255,255,255);   
+}
+
+.profesionales h2, 
+.obras-sociales h2,
+.institucional h2 {
+  color: var(--principal-color2);
+}
+
+.profesionales .buscador, 
+.obras-sociales .buscador {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.profesionales .resultado-busqueda, 
+.obras-sociales .resultado-busqueda,
+.institucional .directivos {
+  background: rgb(255,255,255);   
+  background: linear-gradient(73deg, rgba(255,255,255,1) 25%, rgba(0,60,112,1) 25%, rgba(18,81,129,1) 50%, rgba(0,179,222,1) 50%, rgba(0,194,224,1) 75%, rgba(0,213,226,1) 75%);  
+  border-radius: 8px;
+  display: flex;
+  padding: 2rem;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+/*--------------- TARJETA PERSONA ---------------*/
+
+.card-persona {
+  border: 3px solid var(--secondary-color2);
+  background: var(--background-card);
+  border-radius: 8px;
+  width: 40%;
+  padding: 0.5rem;
+  margin: 1.5rem;
+  box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  display: grid;
+  grid-template: 
+                "img-card   nombre-card nombre-card" auto
+                "datos-card datos-card  datos-card" auto 
+                "boton-card boton-card  boton-card" 1em / 20% 20px 1fr;
+  overflow: hidden;
+}
+
+.card-persona .img-persona {
+  grid-area: img-card;
+  margin: 0.5rem;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.card-persona .img-ob-s {
+  grid-area: img-card;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  width: 90%;
+  min-width: 90%;
+  min-height: 40%;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.card-persona .nombre, 
+.card-ob-social .nombre {
+  grid-area: nombre-card;
+  color: var(--secondary-color2);
+  font-size: 1.5rem;
+}
+
+.card-persona .cargo {
+  grid-area: nombre-card;
+  color: var(--secondary-color1);
+  font-size: 1rem;
+  font-weight: bold
+}
+
+.card-persona .datos-persona,
+.card-ob-social .datos-persona {
+  grid-area: datos-card;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-persona .boton-primario,
+.card-ob-social .boton-prof {
+  grid-area: boton-card;
+  align-items: center;
+}
+
+
+/*--------------- COPIADO ---------------*/
+
+input[type="search"] {
+  min-width: 26vw;
+  width: auto;
+  height: 7vh;
+  border-radius: 3px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  box-shadow:
+             0 -3em 3em rgba(0,0,0,0.1),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+input[type="search"]::placeholder {
+  color: #ffff;
+}
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+
+@media screen and (max-width: 768px) {
+
+    .profesionales, 
+    .obras-sociales,
+    .institucional {
+      margin: 0.5rem;
+    }
+
+    .profesionales .resultado-busqueda, 
+    .obras-sociales .resultado-busqueda,
+    .institucional .directivos {
+      padding: 0.5rem;
+    }
+
+    .card-persona {
+      width: 100%;
+    }
+
+}
