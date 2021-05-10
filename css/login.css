@@ -42,7 +42,6 @@
   width: 66%;
   height: 102%;
   background-image: linear-gradient(88deg, #00b3f2 60%, #00d5e2 60%);
-  /*  background:linear-gradient(160deg, red, red 60%, white 60%, white); */
 }
 
 .telefonos::before {

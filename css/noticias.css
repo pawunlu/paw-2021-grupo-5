@@ -35,6 +35,10 @@
     color: var(--principal-color1);
 }
 
+.noticias h4{
+    display: none;
+    
+    }
 
 .noticias .fichasNoticias {
     display: flex;
@@ -74,6 +78,8 @@
     color: white;
     border-radius: 5px;
 }
+
+
 
 /* ----------------------      NOTICIA SOLA                        ---------------------------------- */
 

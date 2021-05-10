@@ -4,29 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
-    <meta name="description" content="UNLuPAW Medical Group" />
+    <meta name="description" content="UNLuPAW Medical Group - Home" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNLuPAW Medical Group - Registrarse</title>
+    <title>UNLuPAW Medical Group - Home</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/turnoSolicitado.css" type="text/css" />
-    <link rel="stylesheet" href="../css/login.css" type="text/css" />
+    <link rel="stylesheet" href="../css/iconos.css" type="text/css" />
     
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
       <a href="index.html">
         <picture>
-          <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
-          <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
-          <img alt="UNLuPAW Medical Group" src="/images/logo2.png" />
+          <source media="(min-width:3840px)" srcset="/imagenes/logo.png" />
+          <img alt="UNLuPAW Medical Group" src="/images/logo.png" />
         </picture>
       </a>
-
       <nav>
         <ul>
           <li>
@@ -39,7 +32,6 @@
         </ul>
       </nav>
     </header>
-
     <main >
 
         <section class="turnoSolicitado">
@@ -51,7 +43,7 @@
 
             <h3>Datos del profesional</h3>
             <article>
-               
+            <h5>Profesional y especialidad seleccionada</h5>   
             <p>Profesional: </p>
             <p>Especialidad: </p>
 
@@ -63,6 +55,7 @@
             <h3>Paciente</h3>
             <h4>Datos personales</h4>
             <article>
+              <h5>Datos personales del paciente</h5>   
                 <p>Nombre y Apellido: </p>
                 <p>Fecha de nacimiento: </p>
                 <p>Edad: </p>
@@ -72,6 +65,7 @@
             <hr/>
             <h4>Datos de contacto</h4>
            <article>
+            <h5>Datos de contacto del paciente</h5>   
             <p>Telefono</p>
             <p>Email</p>
            </article>
@@ -79,11 +73,13 @@
             <hr/>
             <h4>Datos de turno</h4>
             <article>
+              <h5>Datos del turno solicitado por el paciente</h5>   
                 <p>Fecha: </p>
                 <p>Hora:</p>
             </article>
 
            <article style="justify-content: space-around;">
+            <h5>Botones</h5>
             <a href="listadoTurnos.html">Ver turnos</a> 
             <button>Agregar al calendario</button>
            </article>
@@ -97,39 +93,37 @@
     </main>
 
     <footer>
-        <nav>
-          <a href="https://www.facebook.com/" style="background: #4f2c7f"
-            ><span class="material-icons-outlined" style="font-size: 36px"
-              >facebook</span
-            ></a
-          >
-          <a href="https://www.instagram.com/" style="background: #4f2c7fa1"
-            ><span class="material-icons-outlined" style="font-size: 36px"
-              >sports_football</span
-            ></a
-          >
-          <a href="https://twitter.com/" style="background: #4f2c7f61"
-            ><span class="material-icons-outlined" style="font-size: 36px"
-              >sports_motorsports</span
-            ></a
-          >
-        </nav>
-  
-        <section>
-          <article>
-            <address>
-              <span class="material-icons-outlined">location_on</span> El Grito de
-              Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
-            </address>
-            <a href="tel:+2364537977" style="color: #ffffff"
-              ><span class="material-icons-outlined">phone</span> Teléfono:
-              02345-485562
-            </a>
-          </article>
-  
-          <img alt="UNLuPAW Medical Group" src="/images/logo3.png" />
-        </section>
-      </footer>
-    </body>
-  </html>
-  
+      <nav>
+        <a href="https://www.facebook.com/" style="background: #4f2c7f"
+          ><span class="facebook-icon-24"></span></a
+        >
+        <a href="https://www.instagram.com/" style="background: #4f2c7fa1"
+          ><span class="instagram-icon-24"></span></a
+        >
+        <a href="https://twitter.com/" style="background: #4f2c7f61"
+          ><span class="twitter-icon-24"></span></a
+        >
+      </nav>
+
+      <section>
+       <h2> Footer</h2>
+        <article>
+          
+            <h3>Información de contacto</h3>
+          
+
+          <address>
+            <span class="ubicacion-icon-24"></span> El Grito de
+            Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+          </address>
+          <a href="tel:+2364537977" style="color: #ffffff"
+            ><span class="telefono-icon-24"></span> Teléfono:
+            02345-485562
+          </a>
+        </article>
+
+        <a href="/src/index.html"><img alt="UNLuPAW Medical Group" src="/images/logo-white.png" /></a>
+      </section>
+    </footer>
+  </body>
+</html>

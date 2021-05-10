@@ -20,6 +20,10 @@
     text-decoration: underline;
 }
 
+.turnoSolicitado h5 {
+    display: none;
+}
+
 .turnoSolicitado hr {
     border: none;
     border-bottom: 2px solid var(--principal-color2);

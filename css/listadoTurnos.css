@@ -78,7 +78,11 @@
     border: none;
 }
 
-.listadoTurnos h3{
+.listadoTurnos h3 {
+    display: none;
+}
+
+.listadoTurnos h4{
     margin-right: 0.5em;
     color: var(--principal-color2);
 }
