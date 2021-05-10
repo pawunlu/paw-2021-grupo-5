@@ -1,0 +1,132 @@
+.listadoTurnos{
+    padding: 2em;
+}
+
+.listadoTurnos header {
+    background-color: transparent;
+    border-bottom: none;
+    color: var(--principal-color2);
+}
+
+.listadoTurnos select {
+    min-width: 94.5vw;
+    width: auto;
+    height: 7vh;
+    border-color: var(--principal-color1);
+    color: var(--principal-color1);
+    background: white;
+}
+
+.listadoTurnos select:focus {
+    outline: none;
+  }
+
+.listadoTurnos .ficha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.8em;
+    min-width: 27vw;
+    width: auto;
+    border-radius: 4px;
+    border: 2px solid var(--principal-color1);
+
+}
+
+.listadoTurnos article {
+    display: flex;
+    align-items: center;
+    min-width: 27vw;
+    width: auto;
+    height: 5vh;
+    margin-bottom: 0.3em;
+}
+
+.listadoTurnos button{
+    min-width: 27vw;
+    width: auto;
+    height: 5vh;
+    margin-top: 0.2em;
+    border: 1px solid var(--principal-color1);
+    background: #ffff;
+    color: var(--principal-color1);
+    font-weight: bold;
+    border-radius: 1px;
+    transition: all 1s ease;
+    position: relative;
+ }
+  
+.listadoTurnos button:hover {
+    color: #ffff;
+    background: var(--principal-color1)
+}
+
+.listadoTurnos button:focus {
+  outline: none;
+}
+  
+
+.listadoTurnos .fichas {
+    
+    display: flex;
+    flex-direction: unset;
+    width: 95vw;
+    flex-wrap: wrap;
+    gap: 2.8em;
+    padding: 1em 0;
+    background: white;
+    border: none;
+}
+
+.listadoTurnos h3{
+    margin-right: 0.5em;
+    color: var(--principal-color2);
+}
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+@media screen and (max-width: 768px) {
+
+.listadoTurnos .fichas {
+    width: 87vw;
+    gap: 0.8em;
+}
+
+.listadoTurnos header {
+    color: var(--principal-color2)
+}
+
+.listadoTurnos .ficha {
+    height: 18vh;
+    min-width: 75vw;
+    
+}
+
+.listadoTurnos select {
+    min-width: 82vw;   
+    height: 4vh;
+    border-radius: 2px;
+}
+
+.listadoTurnos h3 {
+    font-size: 16px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-right: 0.2em;
+
+}
+
+.listadoTurnos article {
+    margin-bottom: 0em;
+}
+
+.listadoTurnos p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.listadoTurnos button{ 
+    color: #ffff;
+    background: var(--principal-color1)
+}
+
+}    

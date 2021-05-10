@@ -17,11 +17,13 @@
   </head>
   <body>
     <header>
-      <picture>
-        <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
-        <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
-        <img alt="UNLuPAW Medical Group" src="/images/logo2.png" />
-      </picture>
+      <a href="index.html">
+        <picture>
+          <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
+          <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
+          <img alt="UNLuPAW Medical Group" src="/images/logo2.png" />
+        </picture>
+      </a>
 
       <nav>
         <ul>
@@ -36,9 +38,11 @@
       </nav>
     </header>
     <main class="containerLogin">
-      <section class="gridForm">
-        <section class="form">
+      <section class="sectionForm">
+        <header>
           <h2>Registrarse</h2>
+        </header>
+         
           <hr />
 
           <form>
@@ -48,6 +52,7 @@
               name="name_input"
               id="name_input"
               placeholder="Juan"
+              required
             />
 
             <label for="surname_input">Apellido:</label>
@@ -56,6 +61,7 @@
               name="surname_input"
               id="surname_input"
               placeholder="Pérez"
+              required
             />
 
             <label for="email_input">Email:</label>
@@ -73,14 +79,16 @@
               name="password_input"
               id="password_input"
               placeholder="***********"
+              required
             />
+            <input type="submit" value="Registrate" />
           </form>
-          <input type="submit" value="Registrate" />
+          
 
           <hr />
           <h4>¿Tenés cuenta en UNLuPAW Medical Group?</h4>
           <a href="login.html">Iniciar sesión</a>
-        </section>
+        
       </section>
 
       <section class="telefonos">

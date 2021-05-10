@@ -13,8 +13,6 @@
     "sidebar  main     main";
 }
 
-/* specific item styles */
-
 .telefonos {
   background: #ffff;
   grid-area: main;
@@ -64,14 +62,15 @@
   align-items: center;
 }
 
-.gridForm {
+.sectionForm {
   background: #ffff;
   grid-area: sidebar;
   padding: 36px;
   border-right: 1px solid var(--principal-color2);
 }
 
-.form hr {
+
+.sectionForm hr {
   border: none;
   border-bottom: 2px solid black;
   height: 0vh;
@@ -79,16 +78,16 @@
   width: 28vw;
 }
 
-.form h2 {
+.sectionForm h2 {
   color: var(--principal-color1);
 }
 
-.form label {
+.sectionForm form label {
   display: block;
   margin: 0px;
 }
 
-.form input[type="text"] {
+.sectionForm form input[type="text"] {
   min-width: 26.3vw;
   width: auto;
   height: 3vh;
@@ -99,14 +98,14 @@
   font-weight: bold;
   outline: none;
   padding: 10px;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
-.form input[type="text"]::placeholder {
+.sectionForm form input[type="text"]::placeholder {
   color: #ffff;
 }
 
-.form input[type="email"] {
+.sectionForm form input[type="email"] {
   min-width: 26.3vw;
   width: auto;
   height: 3vh;
@@ -117,31 +116,105 @@
   font-weight: bold;
   outline: none;
   padding: 10px;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
-.form input[type="email"]::placeholder {
+.sectionForm form input[type="email"]::placeholder {
   color: #ffff;
 }
 
-.form input[type="password"] {
+.sectionForm form input[type="password"] {
   min-width: 26.3vw;
   width: auto;
   height: 3vh;
   border-radius: 1px;
   background: var(--secondary-color1);
-  color: var(--secondary-color1);
-  border: 2px solid;
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
   outline: none;
   padding: 10px;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
-.form input[type="password"]::placeholder {
+.sectionForm form input[type="password"]::placeholder {
   color: #ffff;
 }
 
-.form input[type="submit"] {
+.sectionForm form input[type="tel"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.sectionForm form input[type="tel"]::placeholder {
+  color: #ffff;
+}
+
+.sectionForm form input[type="datetime-local"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.sectionForm form input[type="datetime-local"]::placeholder {
+  color: #ffff;
+}
+
+.sectionForm form input[type="date"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.sectionForm form input[type="date"]::placeholder {
+  color: #ffff;
+}
+
+.sectionForm form input[type="number"] {
+  min-width: 26.3vw;
+  width: auto;
+  height: 3vh;
+  border-radius: 1px;
+  background: var(--secondary-color1);
+  color: #ffff;
+  border: 2px solid var(--secondary-color1);
+  font-weight: bold;
+  outline: none;
+  padding: 10px;
+  margin: 10px 0px;
+}
+
+.sectionForm form input[type="number"]::placeholder {
+  color: #ffff;
+}
+
+
+.sectionForm form input[type="submit"] {
   color: #ffff;
   width: 28vw;
   height: 3em;
@@ -154,13 +227,31 @@
   position: relative;
 }
 
-.form input[type="submit"]:hover {
+.sectionForm form input[type="submit"]:hover {
   color: var(--principal-color2);
   background: #ffff;
   border: 2px solid var(--principal-color2);
 }
 
-.form a {
+.sectionForm form input[type="reset"] {
+  color: var(--principal-color2);
+  width: 7vw;
+  height: 3em;
+  font-weight: bold;
+  border-style: none;
+  border-radius: 1px;
+  background: #ffff;
+  margin: 20px 0px;
+  margin-left: 21vw;
+  transition: all 1s ease;
+  position: relative;
+}
+
+
+
+
+
+.sectionForm a {
   height: 2.5em;
   width: 27.726vw;
   margin-left: 0vw;
@@ -176,7 +267,7 @@
   position: relative;
 }
 
-.form a:hover {
+.sectionForm a:hover {
   height: 2.5em;
   width: 27.726vw;
   margin-left: 0vw;
@@ -191,6 +282,14 @@
   border: 2px solid var(--principal-color2);
 }
 
+.sectionForm header {
+  background: transparent;
+  border-bottom: none;
+}
+
+
+
+
 /*--------------------------                     MOBILE                              ------------------------------ */
 @media screen and (max-width: 768px) {
   .containerLogin {
@@ -202,35 +301,62 @@
     display: none;
   }
 
-  .gridForm {
+  .sectionForm {
     padding: 3vh 17vw;
   }
 
-  .form hr {
+  .sectionForm hr {
     width: 62vw;
   }
 
-  .form input[type="submit"] {
+  .sectionForm form input[type="submit"] {
     width: 63vw;
   }
 
-  .form input[type="password"] {
+  .sectionForm form input[type="reset"] {
+    width: 42vw;
+    
+  }
+
+  .sectionForm form input[type="password"] {
     width: 57vw;
   }
 
-  .form input[type="email"] {
+  .sectionForm form input[type="email"] {
     width: 57vw;
   }
 
-  .form input[type="text"] {
+  .sectionForm form input[type="text"] {
     width: 57vw;
   }
 
-  .form a {
+  .sectionForm form input[type="date"] {
+    width: 57vw;
+  }
+
+  .sectionForm form input[type="number"] {
+    width: 57vw;
+  }
+
+  .sectionForm form input[type="tel"] {
+    width: 57vw;
+  }
+
+  .sectionForm form input[type="datetime-local"] {
+    width: 57vw;
+  }
+
+  .sectionForm header {
+    justify-content: center;
+  }
+
+  
+
+  .sectionForm a {
     width: 61.726vw;
   }
 
-  .form a:hover {
+  .sectionForm a:hover {
     width: 61.726vw;
   }
 }

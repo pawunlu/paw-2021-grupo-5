@@ -179,8 +179,12 @@ footer section article a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-left: 100px;
+
   margin-right: 20px;
+}
+
+.cardNoticias a {
+  z-index: 1000;
 }
 
 .cardNoticias article::before {

@@ -6,9 +6,10 @@
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
     <meta name="description" content="UNLuPAW Medical Group" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNLuPAW Medical Group - Solicitar turno</title>
+    <title>UNLuPAW Medical Group - Registrarse</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-    <link rel="stylesheet" href="../css/turnos-styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/login.css" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
@@ -16,85 +17,157 @@
   </head>
   <body>
     <header>
-      <picture>
-        <source media="(min-width:768px)" srcset="/imagenes/logo2.png 768w" />
-        <source media="(min-width:1000px)" srcset="/imagenes/logo2.png 1000w" />
-        <img src="/images/logo2.png" style="width: 85px; height: 100px" />
-      </picture>
-
-      <a href="login.html">Iniciar sesion</a>
+      <a href="index.html">
+        <picture>
+          <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
+          <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
+          <img alt="UNLuPAW Medical Group" src="/images/logo2.png" />
+        </picture>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="profesionales.html">Profesionales y Especialidades</a>
+          </li>
+          <li><a href="obrasSociales.html">Obras Sociales</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="login.html">Iniciar Sesión</a></li>
+        </ul>
+      </nav>
     </header>
+    <main class="containerLogin">
 
-    <!-- Menu -->
-    <nav>
-      <ul>
-        <li>
-          <a>Atención al Paciente</a>
-          <ul>
-            <li><a href="solicitarTurno.html">Solicitar Turno</a></li>
-            <li><a href="listadoTurnos.html">Consultar Turnos</a></li>
-          </ul>
-        </li>
-        <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
-        <li><a href="obrasSociales.html">Obras Sociales</a></li>
-        <li><a href="institucional.html">Institucional</a></li>
-        <li><a href="noticias.html">Noticias</a></li>
-      </ul>
-    </nav>
-    <main>
-      <section>
-        <h2>Nuevo Turno</h2>
 
+      <section class="sectionForm">
+        <header>
+          <h2>Nuevo Turno</h2>
+        </header>
+    
+        <hr/>
+        <form class="form">
         <h3>Datos del Profesional</h3>
-        <input type="text" placeholder="Especialidad" />
-        <input type="text" placeholder="Profesionales" />
+        
+        <label for="specialty_input" >Especialidad</label>
+        <input type="text" name="specialty_input" id="specialty_input" placeholder="Cardiologia" required />
 
+        <label for="profesional_input">Profesional</label>
+        <input type="text" name="profesional_input" id="profesional_input" placeholder="Juan Ross" required />
+        <hr/>
         <h3>Datos del Paciente</h3>
-        <form>
-          <input type="text" placeholder="Nombre" />
-          <input type="text" placeholder="Apellido" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Telefono celular" />
-          <input type="date" placeholder="Fecha de nacimiento" />
-          <input type="text" placeholder="Edad" />
-          <input type="date" placeholder="Fecha turno" />
-          <input type="time" placeholder="Hora turno" />
-        </form>
+      
 
-        <button type="reset">Limpiar</button>
-        <button type="submit">Solicitar</button>
+          <label for="name_input">Nombre:</label>
+          <input type="text" name="name_input" id="name_input" placeholder="Juan" required/>
+          
+          
+          <label for="surname_input">Apellido:</label>
+            <input
+              type="text"
+              name="surname_input"
+              id="surname_input"
+              placeholder="Pérez"
+              required
+            />
+          
+          
+            <label for="email_input">Email:</label>
+            <input
+              type="email"
+              name="email_input"
+              id="email_input"
+              placeholder="usuario@gmail.com"
+              required
+            />
+           
+          <label for="tel_input">Telefono celular</label>  
+          <input type="tel" name="tel_input" id="tel_input" placeholder="2364-123456" required />
+
+
+          <label for="birth_date_input">Fecha de nacimiento</label>  
+          <input type="date" name="birth_date_input" id="birth_date_input" required />
+
+          <label for="age_input">Edad</label>  
+          <input type="number" name="age_input" id="age_input" placeholder="23" required />
+
+          <label for="turn_date_input">Fecha del turno</label>  
+          <input type="datetime-local" name="turn_date_input" id="turn_date_input" required/>
+          <hr/>
+        
+        <input type="submit" value="Solicitar"/>
+        <input type="reset" value="Limpiar"/>
+        </form>
+        
       </section>
+
+
+      <section class="telefonos">
+        <h2 style="text-align: center">Teléfonos</h2>
+        <article>
+          <a href="tel:+2364537977">
+            <span class="material-icons-outlined" style="font-size: 36px"
+              >phone</span
+            >
+            11 1234-5678
+          </a>
+
+          <p>Atención telefónica las 24hs</p>
+
+          <a href="tel:+2364537977">
+            <span class="material-icons-outlined" style="font-size: 36px"
+              >phone</span
+            >
+            11 1234-5678
+          </a>
+
+          <p>Lunes a viernes de 8:00 a 20:00 Hs</p>
+
+          <a href="tel:+2364537977">
+            <span class="material-icons-outlined" style="font-size: 36px"
+              >phone</span
+            >
+            11 1234-5678
+          </a>
+
+          <p>Urgencias</p>
+        </article>
+      </section>
+      
     </main>
 
     <footer>
-      <small>Logo</small>
-
-      <section>
-        <address>
-          El Grito de Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
-        </address>
-        <a href="tel:+2364537977" style="color: #ffffff"
-          >Teléfono: 02345-485562
-        </a>
-      </section>
-
       <nav>
-        <a href="https://www.facebook.com/"
+        <a href="https://www.facebook.com/" style="background: #4f2c7f"
           ><span class="material-icons-outlined" style="font-size: 36px"
             >facebook</span
           ></a
         >
-        <a href="https://www.instagram.com/"
+        <a href="https://www.instagram.com/" style="background: #4f2c7fa1"
           ><span class="material-icons-outlined" style="font-size: 36px"
             >sports_football</span
           ></a
         >
-        <a href="https://twitter.com/"
+        <a href="https://twitter.com/" style="background: #4f2c7f61"
           ><span class="material-icons-outlined" style="font-size: 36px"
             >sports_motorsports</span
           ></a
         >
       </nav>
+
+      <section>
+        <article>
+          <address>
+            <span class="material-icons-outlined">location_on</span> El Grito de
+            Alcorta Nº 110, B6620 Chivilcoy, Provincia de Buenos Aires
+          </address>
+          <a href="tel:+2364537977" style="color: #ffffff"
+            ><span class="material-icons-outlined">phone</span> Teléfono:
+            02345-485562
+          </a>
+        </article>
+
+        <img alt="UNLuPAW Medical Group" src="/images/logo3.png" />
+      </section>
     </footer>
   </body>
 </html>

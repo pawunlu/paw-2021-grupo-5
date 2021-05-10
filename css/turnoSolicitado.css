@@ -1,0 +1,101 @@
+.turnoSolicitado {
+      padding: 3em;
+}
+
+.turnoSolicitado article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 10em;
+}
+
+.turnoSolicitado h4 {
+    margin: 5px 0px;
+    
+}
+
+.turnoSolicitado h3 {
+    margin: 5px 0px;
+    color: var(--principal-color2);
+    text-decoration: underline;
+}
+
+.turnoSolicitado hr {
+    border: none;
+    border-bottom: 2px solid var(--principal-color2);
+    height: 0vh;
+    margin: 0px;
+    width: 92vw;
+}
+
+.turnoSolicitado header {
+    background: transparent;
+    color: var(--principal-color1);
+}
+
+.turnoSolicitado a {
+    background: var(--principal-color1);
+    color: #ffff;
+    width: 12vw;
+    height: 5vh;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    position: relative;
+
+}
+
+.turnoSolicitado a:hover {
+    background: #ffff;
+    color: var(--principal-color1);
+    border: 2px solid var(--principal-color1);
+}
+
+.turnoSolicitado button {
+    background: var(--principal-color1);
+    color: #ffff;
+    width: 12vw;
+    height: 5vh;
+    border: 0px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 1s ease;
+    position: relative;
+}
+
+.turnoSolicitado button:hover {
+    background: #ffff;
+    color: var(--principal-color1);
+    border: 2px solid var(--principal-color1);
+}
+
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+@media screen and (max-width: 768px) {
+
+.turnoSolicitado article {
+        display: flex;
+        flex-direction: column;
+         margin-right: 0em;
+         align-items: unset;
+    }
+.turnoSolicitado hr {
+    min-width: 70vw;
+    width: auto;
+}      
+
+.turnoSolicitado a {
+    min-width: 72vw;
+    width: auto;
+}
+
+.turnoSolicitado button {
+    min-width: 72vw;
+    width: auto;
+    margin-top: 0.5em;
+}
+}
