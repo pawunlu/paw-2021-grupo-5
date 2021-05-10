@@ -6,7 +6,7 @@
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
     <meta name="description" content="UNLuPAW Medical Group - Home" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNLuPAW Medical Group - Home</title>
+    <title>UNLuPAW Medical Group - Obras Sociales</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/leo.css" type="text/css" />
 
@@ -20,7 +20,7 @@
       <picture>
         <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
         <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
-        <a href="index.html"><img src="/images/logo2.png"/></a>
+        <a href="index.html"><img src="/images/logo2.png" alt="UNLuPAW Medical Group"/></a>
       </picture>
       <nav>
         <ul>
@@ -30,61 +30,54 @@
           <li><a href="noticias.html">Noticias</a></li>
           <li><a href="login.html">Iniciar Sesión</a></li>
         </ul>
-
+      </nav>
     </header>
 
-      <main>
+    <main>
+  
+      <section class="obras-sociales">
+        <h2>Obras Sociales</h2>
+         
+        <input class="buscador" type="search" placeholder="Buscar obra social"/>
 
+        <section class="resultado-busqueda">
 
+          <section class="card-persona">
+            <h4 class="nombre">OMINT</h4>
+            <img class="img-ob-s" src="../images/obras-sociales/omint.png" alt="Omint">
 
-
-        
-        <section class="obras-sociales">
-          <header>
-            <h2>Obras Sociales</h2>
-          </header>
-          
-          <input class="buscador" type="search" placeholder="Buscar obra social" />
-          
-          <section class="resultado-busqueda">
-
-            <section class="card-persona">
-              <img class="img-ob-s" src="../images/obras-sociales/osde.png" alt="">
-              <article>
-                <h2 class="nombre">OSDE</h2>
-                <ul class="datos-persona">
-                    <li>50 profesionales adheridos</li>
-                    <li>15 especialidades disponibles</li>
-                </ul>
-              </article> 
-              <input class="boton-prof" type="submit" value="Ver Profesionales"/> 
-            </section>
-
-            <section class="card-persona">
-              <img class="img-ob-s" src="../images/obras-sociales/SM.png" alt="">
-              <article>
-                <h2 class="nombre">Swiff Medical</h2>
-                <ul class="datos-persona">
-                    <li>50 profesionales adheridos</li>
-                    <li>15 especialidades disponibles</li>
-                </ul>
-              </article> 
-              <input class="boton-prof" type="submit" value="Ver Profesionales"/> 
-            </section>
-
+            <ul class="datos-persona">
+              <li>50 profesionales adheridos</li>
+              <li>15 especialidades disponibles</li>
+            </ul>
+            <a class="boton-primario" href="profesionales.html">Ver Profesionales</a>
           </section>
-          
+
+          <section class="card-persona">
+            <h4 class="nombre">Swiss Medical</h4>
+            <img class="img-ob-s" src="../images/obras-sociales/SM.png" alt="Swiss Medical">
+
+            <ul class="datos-persona">
+              <li>50 profesionales adheridos</li>
+              <li>15 especialidades disponibles</li>
+            </ul>
+            <a class="boton-primario" href="profesionales.html">Ver Profesionales</a>
+          </section>
+
+          <section class="card-persona">
+            <h4 class="nombre">OSDE</h4>
+            <img class="img-ob-s" src="../images/obras-sociales/osde.png" alt="OSDE">
+
+            <ul class="datos-persona">
+              <li>50 profesionales adheridos</li>
+              <li>15 especialidades disponibles</li>
+            </ul>
+            <a class="boton-primario" href="profesionales.html">Ver Profesionales</a>
+          </section>
+
         </section>
-
-
-
-
-
-
-
-
-
-
+          
+      </section>
 
 
       <a href="tel:+2364537977" class="btn-flotante">
@@ -106,6 +99,7 @@
           Sociales</a
         >
       </nav>
+
     </main>
 
     <footer>
@@ -139,7 +133,7 @@
           </a>
         </article>
 
-        <img src="/images/logo3.png" />
+        <img src="/images/logo3.png" alt="UNLuPAW Medical Group"/>
       </section>
     </footer>
   </body>

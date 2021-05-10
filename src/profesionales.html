@@ -6,7 +6,7 @@
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
     <meta name="description" content="UNLuPAW Medical Group - Home" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNLuPAW Medical Group - Home</title>
+    <title>UNLuPAW Medical Group - Profesionales</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/leo.css" type="text/css" />
 
@@ -20,7 +20,7 @@
       <picture>
         <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
         <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
-        <a href="index.html"><img src="/images/logo2.png"/></a>
+        <a href="index.html"><img src="/images/logo2.png" alt="UNLuPAW Medical Group"/></a>
       </picture>
       <nav>
         <ul>
@@ -30,87 +30,69 @@
           <li><a href="noticias.html">Noticias</a></li>
           <li><a href="login.html">Iniciar Sesión</a></li>
         </ul>
-
+      </nav>
     </header>
-
-
-
 
     <main>
       <section class="profesionales">
-        <header>
-          <h2>Profesionales</h2>
-        </header>
+        <h2>Profesionales</h2>
         
         <input class="buscador" type="search" placeholder="Buscar por profesional o por especialidad"/>
 
         <section class="resultado-busqueda">
+          
+          <section class="card-persona">
+            <h4 class="nombre">Dr. Luis Cordoba</h4>
+            <h3 class="cargo">Cardiología</h3>
+            <img class="img-persona" src="../images/doctor.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+                <li>Dias de atención: Lunes - Miercoles - viernes</li>
+                <li>Horario de atención: 14:00 - 18:00 Hs</li>
+                <li>Obras Sociales: OSDE - IOMA</liclass=>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>
+          
+          <section class="card-persona">
+            <h4 class="nombre">Dr. Antonio Martinez</h4>
+            <h3 class="cargo">Medicina General</h3>
+            <img class="img-persona" src="../images/persona-anonima.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+                <li>Dias de atención: Lunes - Miercoles - viernes</li>
+                <li>Horario de atención: 14:00 - 18:00 Hs</li>
+                <li>Obras Sociales: OSDE - IOMA</liclass=>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>    
 
           <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Luis Cordoba</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Cardiología</li>
-                  <li>Dias de atención: Lunes - Miercoles - viernes</li>
-                  <li>Horario de atención: 14:00 - 18:00 Hs</li>
-                  <li>Obras Sociales: OSDE - IOMA</li>
-              </ul>
-              <input class="boton-prof" type="submit" value="Solicitar turno"/>
-            </article>          
-          </section>
-  
-          <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Luis Cordoba</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Cardiología</li>
-                  <li>Dias de atención: Lunes - Miercoles - viernes</li>
-                  <li>Horario de atención: 14:00 - 18:00 Hs</li>
-                  <li>Obras Sociales: OSDE - IOMA</li>
-              </ul>
-              <input type="submit" value="Solicitar turno"/>
-            </article>          
-          </section>
-
-          <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Luis Cordoba</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Cardiología</li>
-                  <li>Dias de atención: Lunes - Miercoles - viernes</li>
-                  <li>Horario de atención: 14:00 - 18:00 Hs</li>
-                  <li>Obras Sociales: OSDE - IOMA</li>
-              </ul>
-              <input type="submit" value="Solicitar turno"/>
-            </article>          
-          </section>
+            <h4 class="nombre">Dra. Sofia Toledo</h4>
+            <h3 class="cargo">Pediatría</h3>
+            <img class="img-persona" src="../images/persona-anonima.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+                <li>Dias de atención: Lunes - Miercoles - viernes</li>
+                <li>Horario de atención: 14:00 - 18:00 Hs</li>
+                <li>Obras Sociales: OSDE - IOMA</liclass=>
+            </ul>
+            <a class="boton-primario" href="solicitarTurno.html">Solicitar Turno</a>
+          </section>    
 
         </section>
 
+      </section>
         
-
-
       <a href="tel:+2364537977" class="btn-flotante">
         <i class="material-icons-outlined" style="font-size: 28px">phone</i></a
       >
 
       <nav>
-        <a href="index.html"
-          ><span class="material-icons-outlined">home</span>Inicio</a
-        >
-        <a href="profesionales.html"
-          ><span class="material-icons-outlined">groups</span>Profesionales</a
-        >
-        <a href="noticias.html"
-          ><span class="material-icons-outlined">feed</span>Noticias</a
-        >
-        <a href="obrasSociales.html"
-          ><span class="material-icons-outlined">emergency</span>Obras
-          Sociales</a
-        >
+        <a href="index.html"><span class="material-icons-outlined">home</span>Inicio</a>
+        <a href="profesionales.html"><span class="material-icons-outlined">groups</span>Profesionales</a>
+        <a href="noticias.html"><span class="material-icons-outlined">feed</span>Noticias</a>
+        <a href="obrasSociales.html"><span class="material-icons-outlined">emergency</span>Obras Sociales</a>
       </nav>
     </main>
 
@@ -145,7 +127,7 @@
           </a>
         </article>
 
-        <img src="/images/logo3.png" />
+        <img src="/images/logo3.png" alt="UNLuPAW Medical Group"/>
       </section>
     </footer>
   </body>
