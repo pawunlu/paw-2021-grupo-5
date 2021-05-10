@@ -64,7 +64,7 @@
 .paginador ul li a {
    
     float: left;
-    padding: 8px 16px;
+    padding: 0.5em 1em;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -73,4 +73,71 @@
     background-color: var(--principal-color1);
     color: white;
     border-radius: 5px;
+}
+
+/* ----------------------      NOTICIA SOLA                        ---------------------------------- */
+
+
+.noticia {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 12em;
+    background: #ececec;
+    padding-bottom: 3em;
+}
+
+.noticia h2 {
+    margin-left: .6em;
+    color: var(--principal-color1);
+}
+
+.noticia p {
+    margin: 0.3em 0.8em;
+} 
+
+.noticia img {
+    height: 50vh;
+}
+
+
+
+/*--------------------------                     MOBILE                              ------------------------------ */
+@media screen and (max-width: 768px) {
+
+.noticias .fichasNoticias {
+    display: flex;
+    justify-content: space-evenly;
+    width: 93vw;
+    flex-wrap: unset;
+    gap: 2.8em;
+    padding: 2.5em 1em;
+    background: white;
+    border: none;
+    flex-direction: column;
+}
+
+.noticias article {
+    min-width: 72vw;
+    width: auto;
+}
+
+.noticias .fichasNoticias {
+    width: 80vw;
+    padding: 0em 1.5em;
+}
+
+.noticias {
+    padding: 0em 2em;
+}
+
+
+.paginador ul li a {   
+    padding: 0.5em 0.8em;
+}
+
+.noticia {
+    margin: 2em 0em;
+}
+
+
 }
