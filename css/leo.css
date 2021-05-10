@@ -1,7 +1,8 @@
-/*--------------- PROFESIONALES / OBRAS SOCIALES ---------------*/
+/*--------------- PROFESIONALES / OBRAS SOCIALES / INSTITUCIONAL ---------------*/
 
 .profesionales, 
-.obras-sociales {
+.obras-sociales,
+.institucional {
   display: flex;
   flex-direction: column;
   margin: 1rem 2rem 1rem 2rem;
@@ -9,7 +10,8 @@
 }
 
 .profesionales h2, 
-.obras-sociales h2 {
+.obras-sociales h2,
+.institucional h2 {
   color: var(--principal-color2);
 }
 
@@ -20,7 +22,8 @@
 }
 
 .profesionales .resultado-busqueda, 
-.obras-sociales .resultado-busqueda {
+.obras-sociales .resultado-busqueda,
+.institucional .directivos {
   background: rgb(255,255,255);   
   background: linear-gradient(73deg, rgba(255,255,255,1) 25%, rgba(0,60,112,1) 25%, rgba(18,81,129,1) 50%, rgba(0,179,222,1) 50%, rgba(0,194,224,1) 75%, rgba(0,213,226,1) 75%);  
   border-radius: 8px;
@@ -32,41 +35,6 @@
        inset 0 -3em 3em rgba(0,0,0,0.1),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
-
-/*--------------- INSTITUCIONAL ---------------*/
-
-.institucional {
-  grid-template-areas:  "header-nos"
-                        "nosotros"
-                        "vision-mision"
-                        "directivos-nos";
-  display: grid;
-  margin: 1rem 2rem 1rem 2rem;
-}
-
-.institucional header {
-  grid-area: header-nos;
-  color: var(--principal-color2);
-}
-
-.institucional .nosotros{
-  grid-area: nosotros;
-}
-
-.institucional .vision-mision{
-  grid-area: vision-mision;
-}
-
-.institucional .directivos {
-  grid-area: directivos-nos;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 5rem;
-}
-
-
-
 
 /*--------------- TARJETA PERSONA ---------------*/
 
@@ -82,12 +50,10 @@
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
   display: grid;
-
   grid-template: 
                 "img-card   nombre-card nombre-card" auto
                 "datos-card datos-card  datos-card" auto 
                 "boton-card boton-card  boton-card" 1em / 20% 20px 1fr;
-
   overflow: hidden;
 }
 
@@ -171,14 +137,15 @@ input[type="search"]::placeholder {
 @media screen and (max-width: 768px) {
 
     .profesionales, 
-    .obras-sociales {
+    .obras-sociales,
+    .institucional {
       margin: 0.5rem;
     }
 
     .profesionales .resultado-busqueda, 
-    .obras-sociales .resultado-busqueda {
+    .obras-sociales .resultado-busqueda,
+    .institucional .directivos {
       padding: 0.5rem;
-      
     }
 
     .card-persona {

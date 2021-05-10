@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="author" content="Leonardo Sequeira - Joaquin Bert" />
-    <meta name="description" content="UNLuPAW Medical Group" />
+    <meta name="description" content="UNLuPAW Medical Group - Institucional" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNLuPAW Medical Group</title>
+    <title>UNLuPAW Medical Group - Institucional</title>
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
     <link rel="stylesheet" href="../css/leo.css" type="text/css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
       rel="stylesheet"
@@ -19,9 +20,8 @@
       <picture>
         <source media="(min-width:1980w)" srcset="/imagenes/logo2.png 768w" />
         <source media="(min-width:1980px)" srcset="/imagenes/logo2.png 1980w" />
-        <a href="index.html"><img src="/images/logo2.png"/></a>
+        <a href="index.html"><img src="/images/logo2.png" alt="UNLuPAW Medical Group"/></a>
       </picture>
-
       <nav>
         <ul>
           <li><a href="profesionales.html">Profesionales y Especialidades</a></li>
@@ -30,17 +30,17 @@
           <li><a href="noticias.html">Noticias</a></li>
           <li><a href="login.html">Iniciar Sesión</a></li>
         </ul>
+      </nav>
     </header>
 
-
     <main>
-      
+
       <section class="institucional">
-        <header>
-          <h2>Nosotros</h2>
-        </header>
+
+          <img alt="Noticia" src="/images/portadas/edificio.jpg" />
         
-        <article class="nosotros">          
+        <section class="nosotros">
+          <h2>Nosotros</h2>
             <p>
               PAWUNLu Medical Group es la Institución Médica por excelencia en la ciudad de Chivilcoy. Con 80 años al servicio de la salud, brindando atención médica personalizada de alta y mediana complejidad, atención ambulatoria y servicios de emergencia; se distingue por su compromiso permanente con el cuidado integral del paciente.
             </p> 
@@ -50,9 +50,7 @@
             <p>
               El excelente nivel médico, la amplia capacidad de prestaciones y el compromiso de cada profesional con la atención al paciente, hacen de este Sanatorio, un centro médico de primer nivel, donde la salud está siempre primero.
             </p>
-        </article>
 
-        <article class="vision-mision">
           <h2>Visión</h2>
           <p>
             Sanatorio Corporación Médica San Martín trabaja con el firme propósito de brindar a la comunidad la mejor atención médica, basada en evidencia científica, investigación y contenido ético, acompañando al paciente y su familia; ofreciendo a la vez un ámbito de desarrollo atractivo para su personal y equipo de profesionales, que favorezca su compromiso y sentido de pertenencia con la Institución.
@@ -61,56 +59,52 @@
           <p>
             Ser la organización modelo en el cuidado y restablecimiento de la salud, manteniendo la excelencia en la calidad de atención y respeto por la dignidad de las personas.
           </p>
-        </article>
+        </section>
+
+        <h2>Directivos</h2>
 
         <section class="directivos">
-          <!--header>        
-            <h2>Directivos</h2>
-          </header-->
-        
+          
           <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Luis Cordoba</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Director General</li>
-                  <li>Email: director@mail.com</li>
-              </ul>
-            </article>          
+            <h4 class="nombre">Dr. Luis Cordoba</h4>
+            <h3 class="cargo">Director General</h3>
+            <img class="img-persona" src="../images/personas/persona_2.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Email:</b> director@mail.com</li>
+            </ul>
           </section>
-  
+
           <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Claudio Ferreira</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Director Medico</li>
-                  <li>Email: director-medica@mail.com</li>
-              </ul>
-            </article>          
+            <h4 class="nombre">Dr. Claudio Ferreira</h4>
+            <h3 class="cargo">Director Medico</h3>
+            <img class="img-persona" src="../images/personas/persona_1.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Email:</b> director-medica@mail.com</li>
+            </ul>
           </section>
-  
+
           <section class="card-persona">
-            <img class="img-persona" src="../images/doctor.jpg" alt="">
-            <article>
-              <h1 class="nombre">Dr. Marcelo Rodriguez</h1>
-              <ul class="datos-persona">
-                  <li class="cargo">Director de Administración y Finanza</li>
-                  <li>Email: director-adm-fin@mail.com</li>
-              </ul>
-            </article>          
+            <h4 class="nombre">Dr. Marcelo Rodriguez</h4>
+            <h3 class="cargo">Director de Finanza</h3>
+            <img class="img-persona" src="../images/personas/persona-anonima.jpg" alt="foto doctor">              
+            
+            <ul class="datos-persona">
+              <li><b>Email:</b> director-adm-fin@mail.com</li>
+            </ul>
           </section>
   
         </section>
 
+    </section>  
+      
+    
 
         
-      </section>
+          
+  
 
-
-
-
-      
 
 
       <a href="tel:+2364537977" class="btn-flotante">
@@ -118,19 +112,10 @@
       >
 
       <nav>
-        <a href="index.html"
-          ><span class="material-icons-outlined">home</span>Inicio</a
-        >
-        <a href="profesionales.html"
-          ><span class="material-icons-outlined">groups</span>Profesionales</a
-        >
-        <a href="noticias.html"
-          ><span class="material-icons-outlined">feed</span>Noticias</a
-        >
-        <a href="obrasSociales.html"
-          ><span class="material-icons-outlined">emergency</span>Obras
-          Sociales</a
-        >
+        <a href="index.html"><span class="material-icons-outlined">home</span>Inicio</a>
+        <a href="profesionales.html"><span class="material-icons-outlined">groups</span>Profesionales</a>
+        <a href="noticias.html"><span class="material-icons-outlined">feed</span>Noticias</a>
+        <a href="obrasSociales.html"><span class="material-icons-outlined">emergency</span>Obras Sociales</a>
       </nav>
     </main>
 
@@ -165,7 +150,7 @@
           </a>
         </article>
 
-        <img src="/images/logo3.png" />
+        <img src="/images/logo3.png" alt="UNLuPAW Medical Group"/>
       </section>
     </footer>
   </body>
