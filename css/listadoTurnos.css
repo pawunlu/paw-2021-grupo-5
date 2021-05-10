@@ -1,146 +1,139 @@
-.listadoTurnos{
-    padding: 2em;
+.listadoTurnos {
+  padding: 2em;
 }
 
 .listadoTurnos header {
-    background-color: transparent;
-    border-bottom: none;
-    color: var(--principal-color2);
+  background-color: transparent;
+  border-bottom: none;
+  color: var(--principal-color2);
 }
 
 .listadoTurnos select {
-    min-width: 90.6vw;
-    width: auto;
-    height: 7vh;
-    border-color: var(--principal-color1);
-    color: var(--principal-color1);
-    background: white;
+  min-width: 90.6vw;
+  width: auto;
+  height: 7vh;
+  border-color: var(--principal-color1);
+  color: var(--principal-color1);
+  background: white;
 }
 
 .listadoTurnos select:focus {
-    outline: none;
-  }
+  outline: none;
+}
 
 .listadoTurnos .ficha {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.8em;
-    min-width: 24vw;
-    width: auto;
-    border-radius: 4px;
-    border: 2px solid var(--principal-color1);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.8em;
+  min-width: 24vw;
+  width: auto;
+  border-radius: 4px;
+  border: 2px solid var(--principal-color1);
 }
 
 .listadoTurnos article {
-    display: flex;
-    align-items: center;
-    min-width: 25vw;
-    width: auto;
-    height: 5vh;
-    margin-bottom: 0.3em;
+  display: flex;
+  align-items: center;
+  min-width: 25vw;
+  width: auto;
+  height: 5vh;
+  margin-bottom: 0.3em;
 }
 
-.listadoTurnos button{
-    min-width: 27vw;
-    width: auto;
-    height: 5vh;
-    margin-top: 0.2em;
-    border: 1px solid var(--principal-color1);
-    background: #ffff;
-    color: var(--principal-color1);
-    font-weight: bold;
-    border-radius: 1px;
-    transition: all 1s ease;
-    position: relative;
- }
-  
+.listadoTurnos button {
+  min-width: 27vw;
+  width: auto;
+  height: 5vh;
+  margin-top: 0.2em;
+  border: 1px solid var(--principal-color1);
+  background: #ffff;
+  color: var(--principal-color1);
+  font-weight: bold;
+  border-radius: 1px;
+  transition: all 1s ease;
+  position: relative;
+}
+
 .listadoTurnos button:hover {
-    color: #ffff;
-    background: var(--principal-color1)
+  color: #ffff;
+  background: var(--principal-color1);
 }
 
 .listadoTurnos button:focus {
   outline: none;
 }
-  
 
 .listadoTurnos .fichas {
-    
-    display: flex;
-    flex-direction: unset;
-    width: 91vw;
-    flex-wrap: wrap;
-    gap: 2.8em;
-    padding: 1em 0;
-    background: white;
-    border: none;
+  display: flex;
+  flex-direction: unset;
+  width: 91vw;
+  flex-wrap: wrap;
+  gap: 2.8em;
+  padding: 1em 0;
+  background: white;
+  border: none;
 }
 
 .listadoTurnos h3 {
-    display: none;
+  display: none;
 }
 
-.listadoTurnos h4{
-    margin-right: 0.5em;
-    color: var(--principal-color2);
+.listadoTurnos h4 {
+  margin-right: 0.5em;
+  color: var(--principal-color2);
 }
 
 /*--------------------------                     MOBILE                              ------------------------------ */
 @media screen and (max-width: 768px) {
-
-.listadoTurnos {
+  .listadoTurnos {
     padding: 0em;
-}    
+  }
 
-.listadoTurnos .turnero-flotante{
+  .listadoTurnos .turnero-flotante {
     display: none;
-}
+  }
 
-.listadoTurnos .fichas {
+  .listadoTurnos .fichas {
     width: 87vw;
     gap: 0.8em;
     margin: 0em 2.5em;
-}
+  }
 
-.listadoTurnos header {
-    color: var(--principal-color2)
-}
+  .listadoTurnos header {
+    color: var(--principal-color2);
+  }
 
-.listadoTurnos .ficha {
+  .listadoTurnos .ficha {
     min-height: 20vh;
     min-width: 75vw;
-    
-}
+  }
 
-.listadoTurnos select {
-    min-width: 82vw;   
+  .listadoTurnos select {
+    min-width: 82vw;
     height: 4vh;
     border-radius: 2px;
     margin: 0em 3em;
-}
+  }
 
-.listadoTurnos h3 {
+  .listadoTurnos h3 {
     font-size: 16px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-right: 0.2em;
+  }
 
-}
-
-.listadoTurnos article {
+  .listadoTurnos article {
     margin-bottom: 0em;
-}
+  }
 
-.listadoTurnos p {
+  .listadoTurnos p {
     margin-block-start: 0em;
     margin-block-end: 0em;
-}
+  }
 
-.listadoTurnos button{ 
+  .listadoTurnos button {
     color: #ffff;
-    background: var(--principal-color1)
+    background: var(--principal-color1);
+  }
 }
-
-}    

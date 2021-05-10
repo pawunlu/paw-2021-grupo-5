@@ -68,7 +68,6 @@
   border-right: 1px solid var(--principal-color2);
 }
 
-
 .sectionForm hr {
   border: none;
   border-bottom: 2px solid black;
@@ -212,7 +211,6 @@
   color: #ffff;
 }
 
-
 .sectionForm form input[type="submit"] {
   color: #ffff;
   width: 28vw;
@@ -241,8 +239,6 @@
   background-color: transparent;
   outline: none;
 }
-
-
 
 .sectionForm a {
   height: 2.5em;
@@ -280,9 +276,6 @@
   border-bottom: none;
 }
 
-
-
-
 /*--------------------------                     MOBILE                              ------------------------------ */
 @media screen and (max-width: 768px) {
   .containerLogin {
@@ -308,7 +301,6 @@
 
   .sectionForm form input[type="reset"] {
     width: 42vw;
-    
   }
 
   .sectionForm form input[type="password"] {
@@ -342,8 +334,6 @@
   .sectionForm header {
     justify-content: center;
   }
-
-  
 
   .sectionForm a {
     width: 61.726vw;

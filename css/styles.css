@@ -145,7 +145,7 @@ footer section article a {
   display: none;
 }
 
-.btn-iniciarSesion{
+.btn-iniciarSesion {
   display: none;
 }
 
@@ -289,7 +289,7 @@ footer section article a {
 }
 
 .serviciosMedicos section article header {
- display: none;
+  display: none;
 }
 
 .cardDatos {
@@ -438,52 +438,9 @@ footer section article a {
   display: none;
 }
 
-
 footer h2 {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*--------------------------                     MOBILE                              ------------------------------ */
 
@@ -503,7 +460,7 @@ footer h2 {
     display: none;
   }
 
-  .btn-iniciarSesion{
+  .btn-iniciarSesion {
     display: flex;
     background: var(--principal-color1);
     color: white;
@@ -513,7 +470,6 @@ footer h2 {
     align-items: center;
     justify-content: center;
     border-radius: 6px;
-    
   }
 
   .navbar {
@@ -563,14 +519,13 @@ footer h2 {
     height: auto;
   }
 
-  
   .btn-flotante {
     display: inline-block;
     padding: 1.25em 1.563em;
     bottom: 14vh;
     right: 2.5vh;
     color: #ffffff;
-    border-radius:  1.25em;
+    border-radius: 1.25em;
     background-color: var(--secondary-color2);
     position: fixed;
     transition: all 300ms ease 0ms;
@@ -612,8 +567,7 @@ footer h2 {
     display: none;
   }
 
-.turnero-flotante {
-   
+  .turnero-flotante {
     height: 9vh;
     display: flex;
     align-items: center;
@@ -625,68 +579,63 @@ footer h2 {
     width: 91vw;
     margin: 2vh 4vw;
     border-radius: 3px;
-}
+  }
 
+  .menu-turnero {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    min-width: 50vh;
+    width: auto;
+    margin: 0px;
+    height: 9vh;
+    justify-content: space-evenly;
+  }
 
-.menu-turnero {
-  display: flex;
-  flex-direction: unset;
-  align-items: center;
-  min-width: 50vh;
-  width: auto;
-  margin: 0px;
-  height: 9vh;
-  justify-content: space-evenly;
-}
+  .menu-turnero hr {
+    width: 0vw;
+    height: 6vh;
+    border-left: 6px solid var(--principal-color1);
+    margin: 0px;
+  }
 
-.menu-turnero hr {
-  width: 0vw;
-  height: 6vh;
-  border-left: 6px solid var(--principal-color1);
-  margin: 0px;
-}
+  .menu-turnero a span:last-child {
+    position: unset;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+    display: unset;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+  }
 
-.menu-turnero a span:last-child {
-  position: unset;
-  top: unset;
-  right: unset;
-  bottom: unset;
-  left: unset;
-  display: unset; 
-  align-items: center; 
-  justify-content: center; 
-  transform: translateY(-100%);
-}
+  .menu-turnero a span:first-child {
+    padding: 0px;
+    margin-bottom: 0vh;
+    font-size: 30px;
+  }
 
-.menu-turnero a span:first-child {
-  padding: 0px;
-  margin-bottom: 0vh;
-  font-size: 30px;
-}
+  .menu-turnero a {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    align-items: center;
+    font-size: 10px;
+  }
 
-.menu-turnero a {
-  display: flex;
-  flex-direction: column;
-  color: #ffffff;
-  align-items: center;
-  font-size: 10px;
-}
+  .menu-turnero[data-animation="to-top"] a span:last-child {
+    transform: none;
+  }
 
-
-.menu-turnero[data-animation="to-top"] a span:last-child {
-  transform: none;
-}
-
-.menu-turnero[data-animation="to-top"] a:hover span:first-child {
-  transform: none;
-}
+  .menu-turnero[data-animation="to-top"] a:hover span:first-child {
+    transform: none;
+  }
 
   .cardDatos {
     display: none;
-
   }
-
-
 
   .cardInstitucional {
     display: flex;
@@ -716,7 +665,6 @@ footer h2 {
     justify-content: center;
     gap: 2rem;
     padding: 1em 0;
-    
   }
 
   .cardInstitucional article {
@@ -729,8 +677,4 @@ footer h2 {
     margin-bottom: 0px;
     margin-top: 4px;
   }
-
-
-
-
 }

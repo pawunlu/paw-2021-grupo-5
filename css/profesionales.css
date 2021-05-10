@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   margin: 1rem 2rem 1rem 2rem;
-  background: rgb(255,255,255);   
+  background: rgb(255, 255, 255);
 }
 
 .profesionales .buscador {
@@ -10,34 +10,50 @@
   margin-bottom: 2rem;
 }
 
-
 .profesionales .resultado-busqueda {
-
   display: flex;
-    justify-content: unset;
-    width: 93vw;
-    flex-wrap: wrap;
-    gap: 1.8em;
-    padding: 0.5em 0em;
-    background: white;
-    border: none;
-
+  justify-content: unset;
+  width: 93vw;
+  flex-wrap: wrap;
+  gap: 1.8em;
+  padding: 0.5em 0em;
+  background: white;
+  border: none;
 }
 
 .card-persona {
   display: grid;
   width: 30%;
+  height: 25vh;
   padding: 0.5rem 0em 1rem 0.5em;
   grid-template-columns: repeat(3, 1fr);
 
-  grid-template: 
-                "img-card   nombre-card nombre-card" auto
-                "datos-card datos-card  datos-card" auto 
-                "boton-card boton-card  boton-card" 1em / 20% 20px 1fr;
+  grid-template:
+    "img-card   nombre-card nombre-card" auto
+    "datos-card datos-card  datos-card" auto
+    "boton-card boton-card  boton-card" 1em / 20% 20px 1fr;
 
   border-radius: 4px;
-  border: 2px solid var(--principal-color1);              
-                
+  border: 2px solid var(--principal-color1);
+  transition: height 0.4s;
+  transition-timing-function: linear;
+}
+
+
+#obras-sociales {
+
+  height: 18vh;
+  width: 20%;
+  transition: height 0.1s;
+  transition-timing-function: linear;
+}
+
+#obras-sociales a {
+  width: 18vw;
+}
+
+#obras-sociales:hover {
+  height: 20vh;
 }
 
 .card-persona h3 {
@@ -52,15 +68,12 @@
   color: var(--principal-color1);
 }
 
-
-
 .card-persona img {
   grid-area: img-card;
-  
-    border-radius: 8px;
-    width: 100%;
-}
 
+  border-radius: 8px;
+  width: 100%;
+}
 
 .card-persona ul {
   grid-area: datos-card;
@@ -68,11 +81,19 @@
   flex-direction: column;
 }
 
+
+.card-persona:hover  {
+  height: 30vh;
+}
+.card-persona:hover > a{
+  display: block;  
+}
+
 .card-persona a {
   grid-area: boton-card;
   align-items: center;
   justify-content: center;
-  display: flex;
+  display: none;
   height: 3vh;
   margin-top: 0.2em;
   border: 1px solid var(--principal-color1);
@@ -84,21 +105,21 @@
   width: 26vw;
   transition: all 1s ease;
   position: relative;
-
+  text-align: center;
 }
 
 .card-persona a:hover {
   color: #ffff;
-  background: var(--principal-color1)
+  background: var(--principal-color1);
 }
 
 .profesionales header {
   background-color: transparent;
-    border-bottom: none;
-    color: var(--principal-color2);
+  border-bottom: none;
+  color: var(--principal-color2);
 }
 
-.profesionales input[type=search] {
+.profesionales input[type="search"] {
   width: 91vw;
   height: 5vh;
   padding: 0.5em;
@@ -106,35 +127,52 @@
   color: var(--principal-color1);
   background: white;
   outline: none;
-
 }
 
-.profesionales input[type=search]::placeholder {
+.profesionales input[type="search"]::placeholder {
   color: var(--principal-color2);
   font-weight: bold;
 }
 
+.institucional {
+  margin: 1rem 2rem 1rem 2rem;
+}
+
+.institucional h2 {
+  color: var(--principal-color2);
+}
 
 /*--------------------------                     MOBILE                              ------------------------------ */
 
 @media screen and (max-width: 768px) {
-
-.resultado-busqueda {
+  .resultado-busqueda {
     flex-direction: column;
+  }
 
+  .card-persona {
+    width: 90%;
+    padding: 0.5rem 0em 2rem 0.5em;
+  }
+
+  .card-persona a {
+    width: 81vw;
+  }
+
+  .profesionales input[type="search"] {
+    width: 86vw;
+  }
+
+  .card-persona a {
+    display: flex;
+  }
+
+  #obras-sociales {
+    width: 89%;
+  }
+
+
+#obras-sociales a {
+  width: 80vw;
 }
 
-.card-persona {
-  width: 90%;
-  padding: 0.5rem 0em 2rem 0.5em;
 }
-
-.card-persona a {
-  width: 81vw;
-}
-
-.profesionales input[type=search] {
-width: 86vw;
-}  
-
-}  

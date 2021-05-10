@@ -1,195 +1,178 @@
 .turnoSolicitado {
-      padding: 3em;
+  padding: 3em;
 }
 
 .turnoSolicitado article {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10em;
 }
 
 .turnoSolicitado h4 {
-    margin: 5px 0px;
-    
+  margin: 5px 0px;
 }
 
 .turnoSolicitado h3 {
-    margin: 5px 0px;
-    color: var(--principal-color2);
-    text-decoration: underline;
+  margin: 5px 0px;
+  color: var(--principal-color2);
+  text-decoration: underline;
 }
 
 .turnoSolicitado h5 {
-    display: none;
+  display: none;
 }
 
 .turnoSolicitado hr {
-    border: none;
-    border-bottom: 2px solid var(--principal-color2);
-    height: 0vh;
-    margin: 0px;
-    width: 92vw;
+  border: none;
+  border-bottom: 2px solid var(--principal-color2);
+  height: 0vh;
+  margin: 0px;
+  width: 92vw;
 }
 
 .turnoSolicitado header {
-    background: transparent;
-    color: var(--principal-color1);
+  background: transparent;
+  color: var(--principal-color1);
 }
 
 .turnoSolicitado a {
-    background: var(--principal-color1);
-    color: #ffff;
-    width: 12vw;
-    height: 5vh;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 1s ease;
-    position: relative;
-
+  background: var(--principal-color1);
+  color: #ffff;
+  width: 12vw;
+  height: 5vh;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  position: relative;
 }
 
 .turnoSolicitado a:hover {
-    background: #ffff;
-    color: var(--principal-color1);
-    border: 2px solid var(--principal-color1);
+  background: #ffff;
+  color: var(--principal-color1);
+  border: 2px solid var(--principal-color1);
 }
 
 .turnoSolicitado header a {
-    background: transparent;
-    width: 12vw;
-   
+  background: transparent;
+  width: 12vw;
 }
 
 .turnoSolicitado a:hover {
-    background: transparent;
-    color: var(--principal-color1);
-    border: none
+  background: transparent;
+  color: var(--principal-color1);
+  border: none;
 }
 
-
 .turnoSolicitado button {
-    background: var(--principal-color1);
-    color: #ffff;
-    width: 12vw;
-    height: 5vh;
-    border: 0px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 1s ease;
-    position: relative;
+  background: var(--principal-color1);
+  color: #ffff;
+  width: 12vw;
+  height: 5vh;
+  border: 0px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease;
+  position: relative;
 }
 
 .turnoSolicitado button:hover {
-    background: #ffff;
-    color: var(--principal-color1);
-    border: 2px solid var(--principal-color1);
+  background: #ffff;
+  color: var(--principal-color1);
+  border: 2px solid var(--principal-color1);
 }
 
 .footerImpresion {
-    background-color: #ffff;
-    color: var(--principal-color2);
-    align-items: unset;
+  background-color: #ffff;
+  color: var(--principal-color2);
+  align-items: unset;
 }
 
 .footerImpresion a {
-    /* Como elimino el important */
-    color: var(--principal-color2) !important;
-    align-items: center;
-    display: flex;
+  /* Como elimino el important */
+  color: var(--principal-color2) !important;
+  align-items: center;
+  display: flex;
 }
 
 .footerImpresion p {
-    font-size: 14px;
-    display: flex;
-    align-items: center;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
 }
 
 .footerImpresion address {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .headerImpresion {
-    justify-content: flex-end;
-    padding-right: 2em;
-
+  justify-content: flex-end;
+  padding-right: 2em;
 }
 
 .headerImpresion::before {
-    content: "";
-    position: absolute;
-    left: 83%;
-    transform: skew( 
-20deg
- ) translateX(5%);
-    width: 2%;
-    min-height: 10%;
-    height: auto;
-    background-image: linear-gradient( 
-120deg
- , #ffffffff, #ffffff);
-    z-index: 100;
-  }
+  content: "";
+  position: absolute;
+  left: 83%;
+  transform: skew(20deg) translateX(5%);
+  width: 2%;
+  min-height: 10%;
+  height: auto;
+  background-image: linear-gradient(120deg, #ffffffff, #ffffff);
+  z-index: 100;
+}
 
-
-
-  .headerImpresion::after {
-    
-
+.headerImpresion::after {
   margin: 0px;
   content: "";
   position: absolute;
   left: 0%;
-  transform: skew( 
-0deg
-) translateX(5%);
+  transform: skew(0deg) translateX(5%);
   width: 80%;
   min-height: 7%;
   height: auto;
-  background-image: linear-gradient( 
-120deg
-, var(--principal-color1), var(--principal-color1));
+  background-image: linear-gradient(
+    120deg,
+    var(--principal-color1),
+    var(--principal-color1)
+  );
   padding: 0px;
-
-  }
+}
 
 /*--------------------------                     MOBILE                              ------------------------------ */
 @media screen and (max-width: 768px) {
+  .turnoSolicitado header a {
+    min-width: 3em;
+  }
 
-
-.turnoSolicitado header a {
-   min-width: 3em;
- }
-
-.turnoSolicitado article {
-        display: flex;
-        flex-direction: column;
-         margin-right: 0em;
-         align-items: unset;
-    }
-.turnoSolicitado hr {
+  .turnoSolicitado article {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0em;
+    align-items: unset;
+  }
+  .turnoSolicitado hr {
     min-width: 70vw;
     width: auto;
-}      
+  }
 
-.turnoSolicitado a {
+  .turnoSolicitado a {
     min-width: 72vw;
     width: auto;
-}
+  }
 
-.turnoSolicitado button {
+  .turnoSolicitado button {
     min-width: 72vw;
     width: auto;
     margin-top: 0.5em;
-}
+  }
 
-
-.headerImpresion::before {
+  .headerImpresion::before {
     left: 48%;
     width: 4%;
     min-height: 9%;
@@ -197,23 +180,13 @@
     z-index: 100;
   }
 
-
-
   .headerImpresion::after {
-    
-
     margin: 0px;
     content: "";
     position: absolute;
     left: 1%;
-    transform: skew( 
-0deg
- ) translateX(5%);
+    transform: skew(0deg) translateX(5%);
     width: 47%;
     min-height: 6%;
-
   }
-
-
-
 }
