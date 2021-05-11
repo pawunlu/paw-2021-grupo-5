@@ -586,6 +586,10 @@ footer h2 {
   width: 89vw;
 }
 
+.institucional .card-persona img {
+  width: 100%;
+}
+
 .institucional h2 {
   color: var(--principal-color2);
 }
