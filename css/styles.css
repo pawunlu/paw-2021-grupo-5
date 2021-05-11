@@ -444,7 +444,6 @@ footer h2 {
   display: none;
 }
 
-
 .profesionales {
   display: flex;
   flex-direction: column;
@@ -486,9 +485,7 @@ footer h2 {
   transition-timing-function: linear;
 }
 
-
 #obras-sociales {
-
   height: 18vh;
   width: 20%;
   transition: height 0.1s;
@@ -528,12 +525,11 @@ footer h2 {
   flex-direction: column;
 }
 
-
-.card-persona:hover  {
+.card-persona:hover {
   height: 30vh;
 }
-.card-persona:hover > a{
-  display: block;  
+.card-persona:hover > a {
+  display: block;
 }
 
 .card-persona a {
@@ -586,6 +582,10 @@ footer h2 {
   padding: 1rem 3rem 1rem 1rem;
 }
 
+.institucional img {
+  width: 89vw;
+}
+
 .institucional h2 {
   color: var(--principal-color2);
 }
@@ -600,12 +600,9 @@ footer h2 {
   color: var(--principal-color2);
 }
 
-
 .listadoTurnos header a {
-margin-right: 4vw;
+  margin-right: 4vw;
 }
-
-
 
 .listadoTurnos select {
   min-width: 90.6vw;
@@ -877,9 +874,8 @@ margin-right: 4vw;
   align-items: unset;
 }
 
-
 .footerImpresion a {
-  /* Como elimino el important */
+  /* No lo pude solucionar sin el important */
   color: var(--principal-color2) !important;
   align-items: center;
   display: flex;
@@ -929,12 +925,6 @@ margin-right: 4vw;
   );
   padding: 0px;
 }
-
-
-
-
-
-
 
 .containerLogin {
   display: grid;
@@ -1214,25 +1204,6 @@ margin-right: 4vw;
   border-bottom: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*--------------------------                     MOBILE                              ------------------------------ */
 
 @media screen and (max-width: 768px) {
@@ -1288,11 +1259,6 @@ margin-right: 4vw;
     text-decoration: none;
     font-size: 14px;
     margin-bottom: 1em;
-  }
-
-  .navbar a span {
-    /* sacar important */
-    font-size: 40px !important;
   }
 
   .homeContainer {
@@ -1445,7 +1411,7 @@ margin-right: 4vw;
   }
 
   .cardInstitucional section header {
- display: none;
+    display: none;
   }
 
   .cardInstitucional img {
@@ -1471,35 +1437,33 @@ margin-right: 4vw;
   .cardInstitucional p {
     margin-bottom: 0px;
     margin-top: 4px;
-    
   }
 
-    .resultado-busqueda {
-      flex-direction: column;
-    }
-  
-    .card-persona {
-      width: 90%;
-      padding: 0.5rem 0em 2rem 0.5em;
-    }
-  
-    .card-persona a {
-      width: 81vw;
-    }
-  
-    .profesionales input[type="search"] {
-      width: 86vw;
-    }
-  
-    .card-persona a {
-      display: flex;
-    }
-  
-    #obras-sociales {
-      width: 89%;
-    }
-  
-  
+  .resultado-busqueda {
+    flex-direction: column;
+  }
+
+  .card-persona {
+    width: 90%;
+    padding: 0.5rem 0em 2rem 0.5em;
+  }
+
+  .card-persona a {
+    width: 81vw;
+  }
+
+  .profesionales input[type="search"] {
+    width: 86vw;
+  }
+
+  .card-persona a {
+    display: flex;
+  }
+
+  #obras-sociales {
+    width: 89%;
+  }
+
   #obras-sociales a {
     width: 80vw;
   }
@@ -1507,11 +1471,11 @@ margin-right: 4vw;
   .listadoTurnos {
     padding: 0em;
   }
-  
-.footerImpresion article{
-  min-width: 50vw;
-  width: auto;
-}
+
+  .footerImpresion article {
+    min-width: 50vw;
+    width: auto;
+  }
 
   .listadoTurnos .turnero-flotante {
     display: none;
@@ -1702,5 +1666,4 @@ margin-right: 4vw;
   .sectionForm a:hover {
     width: 61.726vw;
   }
-
 }
