@@ -49,4 +49,20 @@ class PageController {
     public function profesionales() {
         require $this->viewsDir . 'profesionales.view.php';
     }
+
+    public function obrasSociales() {
+        require $this->viewsDir . 'profesionales.view.php';
+    }
+
+    public function institucional() {
+        require $this->viewsDir . 'profesionales.view.php';
+    }
+
+    public function noticias() {
+        require $this->viewsDir . 'profesionales.view.php';
+    }
+
+    public function login() {
+        require $this->viewsDir . 'profesionales.view.php';
+    }
 }
