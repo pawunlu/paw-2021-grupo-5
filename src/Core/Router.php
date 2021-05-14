@@ -16,9 +16,10 @@ class Router {
 
         list($controller, $method) = explode('@', $this->routes[$path]);
 
-        $objController = new "Paw\\App\\Controllers\\{$controller}";
+        $objName = "Paw\\App\\Controllers\\{$controller}";
+        $objController = new $objName;
 
-        $objController->method();
+        $objController->$method();
 
     }
 }
